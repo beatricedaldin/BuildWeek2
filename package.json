@@ -1,0 +1,19 @@
+{
+  "name": "buildweek2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend": "json-server -w library.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatricedaldin/BuildWeek2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beatricedaldin/BuildWeek2/issues"
+  },
+  "homepage": "https://github.com/beatricedaldin/BuildWeek2#readme"
+}

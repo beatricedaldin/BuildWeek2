@@ -1,4 +1,4 @@
-/*export {User, Book, apiUrlU, apiUrlB}*/
+
 
 class User{
     constructor(name, surname, dateOfBirth, region, rank, id){
@@ -13,17 +13,19 @@ class User{
 
 
 class Book{
-    constructor(title, author, year, review, sharedBy, id){
+    constructor(title, author, year, review, sharedBy,availability, id){
         this.title = title
         this.author = author
         this.year = year
         this.review = review
         this.sharedBy = sharedBy
-        this.availability = true
+        this.availability = availability
         this.id = id
 
     }
 }
 
-const apiUrlU = "http://localhost:3000/users"
 const apiUrlB = "http://localhost:3000/books"
+
+
+export {User, Book, apiUrlB}

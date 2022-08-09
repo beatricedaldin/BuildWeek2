@@ -1,16 +1,29 @@
-/*import {User, Book, apiUrlB, apiUrlU} from './class.js'*/
+import {User, Book, apiUrlB, apiUrlU} from './class.js'
 
-const apiUrlU = "http://localhost:3000/users"
-const apiUrlB = "http://localhost:3000/books"
 
 fetch(apiUrlU)
 .then(res => res.json())
 .then(users => {
+    let userSection = document.querySelector('#users')
+
+    for(let user of users){
+        user = new User(user.name, user.surname, user.dateOfBirth, user.region, user.rank, user.id)
+        let userName = document.createElement('a')
+        userName.innerHTML = user.name + '' + user.surname
+        userSection.append(userName)
+        userName.href = 'user.html?id=' + user.id
+
+        if(user.rank == 'Elementary'){
+            userName.style.color = 'green'
+        } else if(user.rank == 'Intermediate'){
+            userName.style.color = 'blue'
+        } else if (user.rank == 'Advanced'){
+            userName.style.color = 'red'
+        }
+        
+    }
+
     
-    let addUser = document.querySelector('#addUser')
-    addUser.addEventListener('click', function(){
-        location.href = 'createUser.html'
-    })
 
 })
 
@@ -18,10 +31,49 @@ fetch(apiUrlU)
 fetch(apiUrlB)
 .then(res => res.json())
 .then(books => {
+    let bookSection = document.querySelector('#books')
+
+    for(let book of books){
+    book = new Book(book.title, book.author, book.year, book.review, book.sharedBy, book.availability, book.id)
+    let bookTitle = document.createElement('a')
+    bookTitle.innerHTML = book.title
+    bookSection.append(bookTitle)
+    bookTitle.addEventListener('click', function(){
+        let titleB = document.querySelector('#titleB')
+        titleB.innerHTML = book.title
+        let authorB = document.querySelector('#authorB')
+        authorB.innerHTML = book.author
+        let yearB = document.querySelector('#yearB')
+        yearB.innerHTML = book.year
+        let avB = document.querySelector('#avB')
+        avB.innerHTML = book.availability
+        let revB = document.querySelector('#revB')
+        revB.innerHTML = book.review
+    })
+
+    if(book.availability == 'No'){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Someone got it first!',
+          })
+        titleB.style.color = 'lightgrey'
+        authorB.style.color = 'lightgrey'
+        yearB.style.color = 'lightgrey'
+        avB.style.color = 'lightgrey'
+        revB.style.color = 'lightgrey'
+    }
     
-    let addBook = document.querySelector('#addBook')
+    }
+})
+
+
+let addUser = document.querySelector('#addUser')
+    addUser.addEventListener('click', function(){
+        location.href = 'createUser.html'
+    })
+
+let addBook = document.querySelector('#addBook')
     addBook.addEventListener('click', function(){
         location.href = 'createBook.html'
     })
-
-})

@@ -8,6 +8,42 @@
       "sharedBy": "gfdgdfgdfgfd",
       "availability": "Yes",
       "id": 1
+    },
+    {
+      "title": "askdsaii",
+      "author": "jldksajijasi",
+      "year": "1900",
+      "review": "dhhdksjdhkjfhskjhk",
+      "sharedBy": "djlsjflksdjfso",
+      "availability": "No",
+      "id": 2
+    },
+    {
+      "title": "dfdsfdsfsd",
+      "author": "sdfsfsdsd",
+      "year": "1500",
+      "review": "dadasdsaas",
+      "sharedBy": "dadasdsaas",
+      "availability": "Yes",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "name": "Giulia",
+      "surname": "Chittaro",
+      "dateOfBirth": "1993-05-27",
+      "region": "Piemonte",
+      "rank": "Elementary",
+      "id": 1
+    },
+    {
+      "name": "fdsfsdfdsf",
+      "surname": "dsfsdfds",
+      "dateOfBirth": "2022-08-02",
+      "region": "Sicilia",
+      "rank": "Elementary",
+      "id": 2
     }
   ]
 }

@@ -26,6 +26,7 @@ class Book{
 }
 
 const apiUrlB = "http://localhost:3000/books"
+const apiUrlU = "http://localhost:3000/users"
 
 
-export {User, Book, apiUrlB}
+export {User, Book, apiUrlB, apiUrlU}

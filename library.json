@@ -1,5 +1,24 @@
 {
-  "books": [],
+  "books": [
+    {
+      "title": "dadasdsa",
+      "author": "dasdsadas",
+      "year": "2000",
+      "review": "sadsadsadsa",
+      "sharedBy": "dsadasdsad",
+      "availability": "Yes",
+      "id": 1
+    },
+    {
+      "title": "dasdsadsad",
+      "author": "asdasdasdsa",
+      "year": "2000",
+      "review": "fdsgfsdgsd",
+      "sharedBy": "fsdfsdfs",
+      "availability": "Yes",
+      "id": 2
+    }
+  ],
   "users": [
     {
       "name": "Giulia",

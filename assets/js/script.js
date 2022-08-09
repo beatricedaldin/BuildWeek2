@@ -95,3 +95,7 @@ let addBook = document.querySelector('#addBook')
 addBook.addEventListener('click', function () {
     location.href = 'createBook.html'
 })
+let upBtn = document.querySelector('#upB')
+upBtn.addEventListener('click', function(){
+    location.href = 'updateBook.html'
+})

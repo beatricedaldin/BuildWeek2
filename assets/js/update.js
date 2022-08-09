@@ -13,7 +13,7 @@ fetch(apiUrlB+'/'+bookId)
     let review = document.querySelector('#review').value
     let sharedBy = document.querySelector('#sharedBy').value
     let availability = document.querySelector('#availability')
-    var valueA = availability.options[availability.selectedIndex].text; 
+    let valueA = availability.options[availability.selectedIndex].text; 
 
    
     title = book.title
@@ -59,4 +59,11 @@ upBtn.addEventListener('click',function(e){
             timer: 3000
         })
     })
+})
+
+
+
+let goBackBtn = document.querySelector('#goBack')
+goBackBtn.addEventListener('click', function(){
+    location.href = 'index.html'
 })

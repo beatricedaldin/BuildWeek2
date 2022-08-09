@@ -1,0 +1,40 @@
+{
+  "books": [
+    {
+      "title": "dadasdsa",
+      "author": "dasdsadas",
+      "year": "2000",
+      "review": "sadsadsadsa",
+      "sharedBy": "dsadasdsad",
+      "availability": "Yes",
+      "id": 1
+    },
+    {
+      "title": "dasdsadsad",
+      "author": "asdasdasdsa",
+      "year": "2000",
+      "review": "fdsgfsdgsd",
+      "sharedBy": "fsdfsdfs",
+      "availability": "Yes",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "name": "Giulia",
+      "surname": "Chittaro",
+      "dateOfBirth": "1993-05-27",
+      "region": "Piemonte",
+      "rank": "Elementary",
+      "id": 1
+    },
+    {
+      "name": "fdsfsdfdsf",
+      "surname": "dsfsdfds",
+      "dateOfBirth": "2022-08-02",
+      "region": "Sicilia",
+      "rank": "Elementary",
+      "id": 2
+    }
+  ]
+}

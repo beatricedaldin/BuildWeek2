@@ -1,33 +1,5 @@
 {
-  "books": [
-    {
-      "title": "Thedfdsf",
-      "author": "fsfdsfsd",
-      "year": "1453",
-      "review": "fdasfgfsgsf",
-      "sharedBy": "gfdgdfgdfgfd",
-      "availability": "Yes",
-      "id": 1
-    },
-    {
-      "title": "askdsaii",
-      "author": "jldksajijasi",
-      "year": "1900",
-      "review": "dhhdksjdhkjfhskjhk",
-      "sharedBy": "djlsjflksdjfso",
-      "availability": "No",
-      "id": 2
-    },
-    {
-      "title": "dfdsfdsfsd",
-      "author": "sdfsfsdsd",
-      "year": "1500",
-      "review": "dadasdsaas",
-      "sharedBy": "dadasdsaas",
-      "availability": "Yes",
-      "id": 3
-    }
-  ],
+  "books": [],
   "users": [
     {
       "name": "Giulia",

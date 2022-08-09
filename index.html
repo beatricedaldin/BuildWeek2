@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,41 +9,50 @@
     <link rel="stylesheet" href="./assets/css/styleIndex.css">
     <title>MyLibrary</title>
 </head>
+
 <body>
-<header>
-    <h1>MyLibrary</h1>
-</header>
+    <header>
+        <h1>MyLibrary</h1>
+    </header>
 
-<section id="users">
-<button id="addUser">Add a new User</button>
-</section>
+    <section id="users">
+        <button id="addUser">Add a new User</button>
+    </section>
 
-<section id="bookPopUp">
-<div>
-    <h3>Title: </h3>
-    <p id="titleB"></p>
-    <h3>Author: </h3>
-    <p id="authorB"></p>
-    <h3>Publication Year: </h3>
-    <p id="yearB"></p>
-    <h3>Availability: </h3>
-    <p id="avB"></p>
-</div>
-<div>
-    <h3>Review: </h3>
-    <p id="revB"></p>
-</div>
-</section>
+    <section id="bookPopUp">
+        <div id="bookPages">
+        <div id="left">
+            <h3>Title: </h3>
+            <p id="titleB" class="pb"></p>
+            <h3>Author: </h3>
+            <p id="authorB" class="pb"></p>
+            <h3>Publication Year: </h3>
+            <p id="yearB" class="pb"></p>
+            <h3>Availability: </h3>
+            <p id="avB" class="pb"></p>
+        </div>
+        <div id="right">
+            <h3>Review: </h3>
+            <p id="revB" class="pb"></p>
+        </div>
+    </div>
+    <div id="bookBtns">
+        <button id="upB">Update Book</button>
+        <button id="delB">Delete Book</button>
+    </div>
 
-<section id="library">
- <div id="books"></div>
-<button id="addBook">Add a new Book</button>
-</section>
+    </section>
+
+    <section id="library">
+        <div id="books"></div>
+        <button id="addBook">Add a new Book</button>
+    </section>
 
 
-    
-<script type="module" src="./assets/js/script.js"></script>
-<script type="module" src="./assets/js/class.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/delete.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/class.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>

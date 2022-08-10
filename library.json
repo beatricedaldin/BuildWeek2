@@ -35,6 +35,16 @@
       "region": "Sicilia",
       "rank": "Elementary",
       "id": 2
+    },
+    {
+      "email": "alessandrocrescimanni@gmail.com",
+      "password": "$2a$10$PCg3XOLwEF0dPCntQE1lOuNIx.fBlMyEJvq/FCZpmzn.WqXuf9n1K",
+      "name": "Alessandro",
+      "surname": "Crescimanni",
+      "dateOfBirth": "1994-01-10",
+      "region": "Sicilia",
+      "rank": "Elementary",
+      "id": 3
     }
   ]
 }

@@ -32,5 +32,15 @@
 
     <script type="module" src="./assets/js/createBook.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module">
+        import {checkUserAccess} from "./assets/js/class.js"
+        let access = checkUserAccess()
+        if (!access) {
+            
+
+            location.href = "login.html"
+
+        }
+    </script>
 </body>
 </html>

@@ -1,9 +1,11 @@
 
 
 class User{
-    constructor(name, surname, dateOfBirth, region, rank, id){
+    constructor(name, surname, email, password, dateOfBirth, region, rank, id){
         this.name = name
         this.surname = surname
+        this.email = email
+        this.password = password
         this.dateOfBirth = dateOfBirth
         this.region = region
         this.rank = rank
@@ -28,5 +30,9 @@ class Book{
 const apiUrlB = "http://localhost:3000/books"
 const apiUrlU = "http://localhost:3000/users"
 
+function checkUserAccess(){
 
-export {User, Book, apiUrlB, apiUrlU}
+    return localStorage.getItem('token') != null
+    
+}
+export {User, Book, apiUrlB, apiUrlU, checkUserAccess}

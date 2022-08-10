@@ -11,13 +11,15 @@ submitUser.addEventListener('click', function(e){
 
     let name = document.querySelector('#name').value
     let surname = document.querySelector('#surname').value
+    let email = document.querySelector('#email').value
+    let password = document.querySelector('#password').value
     let date = document.querySelector('#date').value
     let region = document.querySelector('#region')
     var valueR = region.options[region.selectedIndex].text
     let grade = document.querySelector('#grade')
     var valueG = grade.options[grade.selectedIndex].text
 
-    let user = new User(name, surname, date, valueR, valueG)
+    let user = new User(name, surname, email, password, date, valueR, valueG)
     console.log(user)
 
     let options = {
@@ -25,6 +27,7 @@ submitUser.addEventListener('click', function(e){
         body: JSON.stringify(user),
         headers:{
             "content-type":"application/json"
+            
         }
     }
     

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "backend": "json-server -w library.json"
+    "backend": "json-server-auth -w library.json"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/beatricedaldin/BuildWeek2/issues"
   },
-  "homepage": "https://github.com/beatricedaldin/BuildWeek2#readme"
+  "homepage": "https://github.com/beatricedaldin/BuildWeek2#readme",
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0"
+  }
 }

@@ -1,17 +1,15 @@
 import { User, Book, apiUrlB, apiUrlU } from './class.js'
 
-
-
 fetch(apiUrlU)
     .then(res => res.json())
     .then(users => {
-        let userSection = document.querySelector('#users')
+        let userList = document.querySelector('#myUser')
 
         for (let user of users) {
             user = new User(user.name, user.surname, user.dateOfBirth, user.region, user.rank, user.id)
             let userName = document.createElement('a')
             userName.innerHTML = user.name + '' + user.surname
-            userSection.append(userName)
+            userList.append(userName)
             userName.href = 'user.html?id=' + user.id
 
             if (user.rank == 'Elementary') {
@@ -23,8 +21,6 @@ fetch(apiUrlU)
             }
 
         }
-
-
 
     })
 
@@ -38,6 +34,7 @@ fetch(apiUrlB)
             book = new Book(book.title, book.author, book.year, book.review, book.sharedBy, book.availability, book.id)
             let bookTitle = document.createElement('a')
             bookTitle.innerHTML = book.title
+            bookTitle.classList.add('book-title')
             bookSection.append(bookTitle)
             bookTitle.addEventListener('click', function () {
                 console.log(book.id)

@@ -1,12 +1,12 @@
 import { Book, apiUrlB} from './class.js'
 
-let goBackBtn = document.querySelector('#goBack')
+let goBackBtn = document.querySelector('.goBack')
 goBackBtn.addEventListener('click', function(){
     location.href = 'index.html'
 })
 
 
-let submitBook = document.querySelector('#submit')
+let submitBook = document.querySelector('.submit')
 submitBook.addEventListener('click', function(e){
     e.preventDefault()
 

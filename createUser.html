@@ -11,15 +11,24 @@
 </head>
 
 <body>
+
+    <h1>Inser a new User</h1>
+    <div class="underline"></div>
     <form id="myForm">
-        <label for="name">First name:</label>
+        <label for="name"></label>
         <input type="text" id="name" name="name" placeholder="Type your First Name... ">
-        <label for="surname">Last name:</label>
+        <label for="surname"></label>
         <input type="text" id="surname" name="surname" placeholder="Type your Last Name...">
-        <label for="date">Date of Birth:</label>
+        <label for="date"></label>
         <input type="date" id="date" name="date" min="1900-01-01" max="2022-08-08">
-        <label for="region">Region:</label>
-        <select name="region" id="region">
+        <label for="grade"></label>
+            <select name="grade" id="grade">
+                <option>Elementary</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+        <label for="region"></label>
+        <select name="region" id="region" >
             <option>Sicilia</option>
             <option>Puglia</option>
             <option>Campania</option>
@@ -41,14 +50,9 @@
             <option>Liguria</option>
             <option>Umbria</option>
             </select>
-            <label for="grade">Grade:</label>
-            <select name="grade" id="grade">
-                <option>Elementary</option>
-                <option>Intermediate</option>
-                <option>Advanced</option>
-            </select>
-        <input type="submit" value="Submit" id="submit">
-        <input type="button" value="Go Back" id="goBack">
+            
+        <input type="submit" value="Submit" class="submit">
+        <input type="button" value="Go Back" class="goBack">
     </form>
 
     <script type="module" src="./assets/js/createUser.js"></script>

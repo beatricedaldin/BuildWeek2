@@ -1,22 +1,40 @@
 {
   "books": [
     {
-      "title": "dadasdsa",
-      "author": "dasdsadas",
-      "year": "2000",
-      "review": "sadsadsadsa",
-      "sharedBy": "dsadasdsad",
+      "title": "The lord of the rings",
+      "author": "j.r.r. tolkien",
+      "year": "1954",
+      "review": "libro spettacolare.",
+      "sharedBy": "beatrice daldin",
       "availability": "Yes",
       "id": 1
     },
     {
-      "title": "dasdsadsad",
-      "author": "asdasdasdsa",
-      "year": "2000",
-      "review": "fdsgfsdgsd",
-      "sharedBy": "fsdfsdfs",
+      "title": "lo straniero",
+      "author": "albert camus",
+      "year": "1942",
+      "review": "stupendo.",
+      "sharedBy": "giulia chittaro",
       "availability": "Yes",
       "id": 2
+    },
+    {
+      "title": "alla ricerca del tempo perduto",
+      "author": "marcel proust",
+      "year": "1913",
+      "review": "spettacolare.",
+      "sharedBy": "edoardo trovarelli",
+      "availability": "No",
+      "id": 3
+    },
+    {
+      "title": "il piccolo principe",
+      "author": "Antoine de Saint-Exupéry",
+      "year": "1949",
+      "review": "favoloso.",
+      "sharedBy": "alessandro crescimanni",
+      "availability": "Yes",
+      "id": 4
     }
   ],
   "users": [

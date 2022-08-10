@@ -36,6 +36,8 @@ fetch(apiUrlB)
             bookTitle.innerHTML = book.title
             bookTitle.classList.add('book-title')
             bookSection.append(bookTitle)
+
+
             bookTitle.addEventListener('click', function () {
                 console.log(book.id)
                 console.log(book)
@@ -51,34 +53,16 @@ fetch(apiUrlB)
                 revB.innerHTML = book.review
                 let pb = document.querySelectorAll('.pb')
 
-
-                for (let p of pb){
-                if (book.availability == 'No') {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Someone got it first!',
-                    })
-                    
-                        p.style.color = 'lightgrey'
-                
-
-                } else {
-                        p.style.color = 'black'
-                   
-                }
-                }
+                let show = document.querySelector("#bookPopUp")
+                show.classList.add('show')
 
             })
-            let delBtn = document.querySelector('#delB')
-                delBtn.addEventListener('click', function(){
-                    console.log(book)
-                    deleteBook(book.id, bookTitle)
-                    for(let p of pb){
-                        p.innerHTML=''
-                    }
-                })
-           
+
+                bookTitle.addEventListener('dblclick', function (){
+                let show = document.querySelector("#bookPopUp")
+                show.classList.remove('show')
+            })
+            
         }
     })
 
@@ -91,8 +75,4 @@ addUser.addEventListener('click', function () {
 let addBook = document.querySelector('#addBook')
 addBook.addEventListener('click', function () {
     location.href = 'createBook.html'
-})
-let upBtn = document.querySelector('#upB')
-upBtn.addEventListener('click', function(){
-    location.href = 'updateBook.html'
 })

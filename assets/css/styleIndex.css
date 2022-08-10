@@ -7,12 +7,44 @@ html{
     font-family: 'Luxurious Roman', cursive;
     
 }
-#header{
+
+#title{
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border-width: 4px 0;
+	top:5%;
+	left: 30%;
+	width: 100%;
     text-align: center;
-    margin-top: 15px;
-    font-size: 4.5em;
-    color:rgb(83, 61, 61);
-    font-family: 'Luxurious Roman', cursive;
+    color: white;
+    font-size: 1.2rem;
+    margin: 50px 0;
+    
+}
+  
+  span {
+	display : block;
+    text-align: center;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+    font-size: 4rem;
+
+	 background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png);
+     background-repeat: repeat-y;
+	 -webkit-background-clip: text;
+	 background-clip: text;
+
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 80s linear infinite;
+
+	 -webkit-transform: translate3d(0,0,0);
+	 -webkit-backface-visibility: hidden;
+
+  }
+
+@keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
 }
 
 #users{
@@ -21,16 +53,10 @@ html{
     right: -5px;
 }
 
-#addBook{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
 #addUser{
     position: absolute;
-    top: 10px;
-    left: -200px;
+    top: 0;
+    left: -150px;
 }
 
 button{
@@ -63,9 +89,14 @@ button:hover{
     background-image: url(../images/libro.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top-left;
     height: 600px;
-    /*display: none;*/
+    width: 100%;
+    max-width: 900px;   
+    display: none;
+}
+
+.show{
+    display: block !important;
 }
 
 #bookPages{
@@ -82,16 +113,52 @@ h3{
   margin: 5px 0;
 }
 
+#bookBox{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#library-container{
+    border: 2px solid rgb(220, 200, 200);
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(238, 223, 223),rgb(240, 232, 232));
+    opacity: 0.6;
+    border-radius: 0px 100px 0px 50px;
+    margin-left: 50px;
+    
+}
+
+#library{
+    margin: 20px auto;
+}
+
 #books{
     display: flex;
-    position: fixed;
-    bottom: 15%;
+    flex-direction: column;
+    
+    
+}
+
+#addBook{
+    width: 30%;
+    margin: 20px 15px;
+    
+}
+
+#libraryTitle{
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: none;
+    margin: 0px 15px 20px 15px;
 }
 
 .book-title{
-    margin: 0 150px;
+    margin: 0px 15px 10px 15px;
     color: black;
-    text-decoration: underline;
     font-weight: bold;
     font-size:1.8rem;
     
@@ -100,36 +167,3 @@ h3{
 #bookBtns{
     margin-left: 250px;
 }
-
-
-
-#container{
-
-    color: white;
-}
-
-#myUser{
-    height: 0;
-    transition: all 0.3s;
-    overflow: hidden;
-    position: relative;
-
-}
-label[for="toggle"]{
-    cursor: pointer;
-}
-
-input[type="checkbox"]{
-    display: none;
-}
-input[type="checkbox"]:checked + #menu{
-    height: 150px;
-}
-
-#myUser  a {
-    height: 25px;
-    display: block;
-    background-color:black;
-    color:white;
-}
-

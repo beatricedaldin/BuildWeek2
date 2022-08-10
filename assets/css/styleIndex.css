@@ -65,7 +65,7 @@ button:hover{
     background-size: contain;
     background-position: top-left;
     height: 600px;
-    display: none;
+    /*display: none;*/
 }
 
 #bookPages{
@@ -93,9 +93,15 @@ h3{
     color: black;
     text-decoration: underline;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size:1.8rem;
     
 }
+
+#bookBtns{
+    margin-left: 250px;
+}
+
+
 
 #container{
 
@@ -120,7 +126,7 @@ input[type="checkbox"]:checked + #menu{
     height: 150px;
 }
 
-#myUser > a {
+#myUser  a {
     height: 25px;
     display: block;
     background-color:black;

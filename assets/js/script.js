@@ -12,7 +12,7 @@ fetch(apiUrlU)
             let userName = document.createElement('a')
             userName.innerHTML = user.name + '' + user.surname
             userSection.append(userName)
-            userName.href = 'user.html?id=' + user.id
+            userName.href = 'profile.html?id=' + user.id
 
             if (user.rank == 'Elementary') {
                 userName.style.color = 'green'

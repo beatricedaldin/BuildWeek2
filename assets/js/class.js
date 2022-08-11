@@ -35,4 +35,44 @@ function checkUserAccess(){
     return localStorage.getItem('token') != null
     
 }
-export {User, Book, apiUrlB, apiUrlU, checkUserAccess}
+
+function getUserRole(){
+
+    let stringa = localStorage.getItem('user')
+
+    let user = JSON.parse(stringa)
+    
+    return stringa ? user.rank : 'guest'
+}
+
+function isUserAdmin(){
+
+    let role = getUserRole()
+
+   return role == 'admin';
+
+}
+
+function checkUserRole(role){
+
+
+   return role == getUserRole();
+
+}
+
+checkUserRole('Advanced')
+
+// if (isUserAdmin()) {
+
+
+
+// } else {
+
+//     let mostra = document.querySelector('#bookBtns')
+//     mostra.remove()
+
+// }
+
+
+console.log(getUserRole())
+export {User, Book, apiUrlB, apiUrlU, checkUserAccess, getUserRole, isUserAdmin}

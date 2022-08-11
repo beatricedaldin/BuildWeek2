@@ -45,6 +45,36 @@
       "region": "Sicilia",
       "rank": "Elementary",
       "id": 3
+    },
+    {
+      "email": "nonloso@gmail.com",
+      "password": "$2a$10$XHBDmSEhNYAt8YgaU8rDhervt8MsnNojWPcxdrzsyuTxA9RdIci6u",
+      "name": "Michele",
+      "surname": "Tedesco",
+      "dateOfBirth": "1990-10-10",
+      "region": "Emilia-Romagna",
+      "rank": "Advanced",
+      "id": 4
+    },
+    {
+      "email": "coserandom@gmail.com",
+      "password": "$2a$10$eQHnA2ZIOPDWjRIUqkYhXOh4vzcL8/w6BRukbgScZiU19gXkiPY5W",
+      "name": "Edoardo",
+      "surname": "Trovarelli",
+      "dateOfBirth": "1960-01-20",
+      "region": "Campania",
+      "rank": "Intermediate",
+      "id": 5
+    },
+    {
+      "email": "cose@gmail.com",
+      "password": "$2a$10$/Y4G6gsPDu07RHRB8FDUJuXUFJyHhJ1qWAnE7BCj4HwfORzRP25Ta",
+      "name": "Giulia",
+      "surname": "Chittaro",
+      "dateOfBirth": "1901-01-01",
+      "region": "Abruzzo",
+      "rank": "Intermediate",
+      "id": 6
     }
   ]
 }

@@ -13,6 +13,7 @@ loginBtn.addEventListener('click', function (e) {
 
             email: email.value,
             password: password.value
+            
 
         }),
 
@@ -26,11 +27,15 @@ loginBtn.addEventListener('click', function (e) {
     .then (data => {
 
         localStorage.setItem('token', data.accessToken);
+        localStorage.setItem('user', JSON.stringify(data.user));
+        
+    if (data.accessToken != null) {
 
+        location.href = 'index.html';
+
+    } else {
+
+        alert("Hai dimenticato l'id, la password, oppure non sei registrato.")
+    }
     })
-
-
-
-
-
 })

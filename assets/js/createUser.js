@@ -44,6 +44,8 @@ submitUser.addEventListener('click', function(e){
         })
         document.querySelector('#myForm').reset();
 
+        location.href = "login.html";
+
     })
 
 })

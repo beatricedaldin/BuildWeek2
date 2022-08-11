@@ -1,12 +1,13 @@
-import { apiUrlB, Book } from "./class";
+import { apiUrlB, Book } from './class.js';
+    
+    let params = new URLSearchParams(location.search);
+    let bookId = params.get('id');
 
-let params = new URLSearchParams(location.search);
-let bookId = params.get('id')
 
 fetch(apiUrlB+'/'+bookId)
 .then(res => res.json())
 .then(book => {
-    
+
     let title = document.querySelector('#title').value
     let author = document.querySelector('#author').value
     let year = document.querySelector('#year').value

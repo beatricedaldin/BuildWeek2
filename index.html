@@ -48,10 +48,20 @@
         <button id="addBook">Add a new Book</button>
     </section>
 
+    <script type="module">
+        import {checkUserAccess} from "./assets/js/class.js"
+        let access = checkUserAccess()
+        if (!access) {
+            
+            
+            guestUser.style.display = "none"
 
-    <script src="./assets/js/delete.js"></script>
+        }
+    </script>
+    
     <script type="module" src="./assets/js/script.js"></script>
     <script type="module" src="./assets/js/class.js"></script>
+    <script src="./assets/js/delete.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 

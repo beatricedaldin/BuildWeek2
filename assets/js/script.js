@@ -8,11 +8,12 @@ fetch(apiUrlU)
         let userSection = document.querySelector('#users')
 
         for (let user of users) {
-            user = new User(user.name, user.surname, user.dateOfBirth, user.region, user.rank, user.id)
+            user = new User(user.name, user.surname, user.email, user.password, user.dateOfBirth, user.region, user.rank, user.id)
             let userName = document.createElement('a')
             userName.innerHTML = user.name + '' + user.surname
             userSection.append(userName)
             userName.href = 'user.html?id=' + user.id
+            console.log(user.id)
 
             if (user.rank == 'Elementary') {
                 userName.style.color = 'green'

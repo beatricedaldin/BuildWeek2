@@ -2,7 +2,7 @@ body {
     background-image: url('../img/libri-antichi1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 90vh;
     max-width: 100%;
 }
 
@@ -182,7 +182,7 @@ h3 {
 }
 
 #contact{
-   
+   margin-top: -400px;
   display: flex;
   position: absolute;
   bottom: 0px;

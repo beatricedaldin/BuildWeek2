@@ -1,11 +1,11 @@
 import {User, apiUrlU} from './class.js'
 
-let goBackBtn = document.querySelector('#goBack')
+let goBackBtn = document.querySelector('.goBack')
 goBackBtn.addEventListener('click', function(){
     location.href = 'index.html'
 })
 
-let submitUser = document.querySelector('#submit')
+let submitUser = document.querySelector('.submit')
 submitUser.addEventListener('click', function(e){
     e.preventDefault()
 

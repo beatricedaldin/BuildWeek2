@@ -33,7 +33,7 @@ document.querySelector('.btnProfile').append(updateBtn)
 // let backInput = document.querySelector('.goBack')
 // let backBtn = document.createElement('a')
 // backBtn.href='index.html'
-// document.querySelector('.goBack').append(backBtn);
+// document.querySelector('a').append(.goBack);
 
     
 

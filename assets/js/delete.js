@@ -1,6 +1,6 @@
 
 
-function deleteBook(id,el){
+function deleteBook(id, el, btn, btn2){
     const apiUrlB = "http://localhost:3000/books"
 
     let options = {
@@ -14,7 +14,9 @@ function deleteBook(id,el){
     .then(res => res.json())
     .then(res => {
       
-        el.remove()
+      el.remove()
+      btn.remove()
+      btn2.remove()
         
         Swal.fire({
             position: 'center',

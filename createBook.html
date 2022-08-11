@@ -9,25 +9,28 @@
     <title>Create a New Book</title>
 </head>
 <body>
-    <form id="myForm">
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" placeholder="Type the book's title... ">
-        <label for="author">Author:</label>
-        <input type="text" id="author" name="author" placeholder="Type the book's author...">
-        <label for="year">Year:</label>
-        <input type="number" id="year" name="year"
+    
+    <h1>Insert a new Book</h1>
+    <form class="myForm">
+       
+        <input type="text" id="title" class="grid-item1" name="title" placeholder="Type the book's title... ">
+        
+        <input type="text" id="author" class="grid-item2" name="author" placeholder="Type the book's author...">
+        
+        <input type="number" id="year" class="grid-item3" name="year" placeholder="Type the year..."
         min="1453" max="2022">
-        <label for="review">Review:</label>
-        <textarea id="review" name="review" placeholder="Type your review..." rows="4" cols="50"></textarea>
-        <label for="sharedBy">Shared by:</label>
-        <input type="text" id="sharedBy" name="sharedBy" placeholder="Type who is sharing this book...">
-        <label for="availability">Availability:</label>
-        <select name="availability" id="availability">
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+        
+        <input type="text" id="sharedBy" class="grid-item4"  name="sharedBy" placeholder="Type who is sharing this book...">
+        
+        <select name="availability" id="availability" class="grid-item5">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
         </select>
-        <input type="submit" value="Submit" id="submit">
-        <input type="button" value="Go Back" id="goBack">
+      
+        <textarea id="review" class="grid-item6" name="review" placeholder="Type your review..." rows="4" cols="50"></textarea>
+        
+        <input type="submit" value="Submit" class="submit grid-item7">
+        <input type="button" value="Go Back" class="goBack grid-item8">
     </form>
 
     <script type="module" src="./assets/js/createBook.js"></script>

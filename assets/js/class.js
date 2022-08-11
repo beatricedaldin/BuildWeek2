@@ -8,6 +8,7 @@ class User{
         this.region = region
         this.rank = rank
         this.id = id
+        this.role = 'User'
     }
 }
 

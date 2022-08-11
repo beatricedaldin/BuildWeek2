@@ -6,14 +6,35 @@ window.onload = function () {
     fetch(apiUrlU)
         .then(res => res.json())
         .then(users => {
-            let userSection = document.querySelector('#users')
+            let userSection = document.querySelector('.menu-items')
 
             for (let user of users) {
                 user = new User(user.name, user.surname, user.email, user.password, user.dateOfBirth, user.region, user.rank, user.id)
+                let userli = document.createElement('li')
+                userli.classList.add('questoSi')
                 let userName = document.createElement('a')
+                userName.classList.add('userName')
                 userName.innerHTML = user.name + '' + user.surname
-                userSection.append(userName)
                 userName.href = 'profile.html?id=' + user.id
+
+                let pointer = document.createElement('p')
+                pointer.classList.add('round')
+
+                userli.append(userName, pointer)
+                userSection.append(userli)
+
+                let dots = document.getElementsByClassName('round')
+        
+        for (let dot of dots){
+        const randomNum = Math.floor(Math.random()*2)+1
+        console.log(randomNum)
+        if(randomNum == 1){
+            dot.style.backgroundColor = 'red'
+        }
+        if(randomNum == 2){
+            dot.style.backgroundColor = 'green'
+        }
+    }
 
                 if (user.rank == 'Elementary') {
                     userName.style.color = 'green'
@@ -102,3 +123,45 @@ window.onload = function () {
     })
 
 }
+
+///////// FORUM  //////
+
+let time = document.querySelector('#ora')
+    let randHour = Math.floor(Math.random()*23)
+    let randMin = Math.floor(Math.random()*59)
+
+    if(randHour < 10){
+        randHour = '0' + randHour
+    }
+    if(randMin < 10){
+        randMin = '0' + randMin
+    }
+
+    time.innerHTML = randHour + ':' + randMin
+
+    let giorno = document.querySelector('#giorno')
+    let date = new Date()
+    let day = date.getDate()-1
+    let month = date.getMonth()+1
+    let year = date.getFullYear()
+
+    giorno.innerHTML =  day + '/' + month +'/'+ year
+
+    let forumBtn = document.querySelector('#forumBtn')
+    forumBtn.addEventListener('click', function () {
+        
+        let showForum = document.querySelector('#container')
+        
+        showForum.classList.add('showForum')
+
+    })
+
+    forumBtn.addEventListener('dblclick', function () {
+        
+        let showForum = document.querySelector('#container')
+        
+        showForum.classList.remove('showForum')
+
+    })
+
+

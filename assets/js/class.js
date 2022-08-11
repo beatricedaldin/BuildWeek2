@@ -37,31 +37,31 @@ function checkUserAccess(){
     
 }
 
-function getUserRole(){
+// function getUserRole(){
 
-    let stringa = localStorage.getItem('user')
+//     let stringa = localStorage.getItem('user')
 
-    let user = JSON.parse(stringa)
+//     let user = JSON.parse(stringa)
     
-    return stringa ? user.rank : 'guest'
-}
+//     return stringa ? user.rank : 'guest'
+// }
 
-function isUserAdmin(){
+// function isUserAdmin(){
 
-    let role = getUserRole()
+//     let role = getUserRole()
 
-   return role == 'admin';
+//    return role == 'admin';
 
-}
+// }
 
-function checkUserRole(role){
+// function checkUserRole(role){
 
 
-   return role == getUserRole();
+//    return role == getUserRole();
 
-}
+// }
 
-checkUserRole('Advanced')
+// checkUserRole('Advanced')
 
 // if (isUserAdmin()) {
 
@@ -75,5 +75,5 @@ checkUserRole('Advanced')
 // }
 
 
-console.log(getUserRole())
-export {User, Book, apiUrlB, apiUrlU, checkUserAccess, getUserRole, isUserAdmin}
+//console.log(getUserRole())
+export {User, Book, apiUrlB, apiUrlU, checkUserAccess}

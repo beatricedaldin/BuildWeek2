@@ -60,15 +60,16 @@ span {
 }
 
 #addUser {
+    width: 100px;
     position: absolute;
     top: 0;
     left: -150px;
 }
 
-button {
+button , .aBtn {
     display: inline-block;
     padding: 0.7em 1.4em;
-    margin: 0 0.3em 0.3em 0;
+    margin: 5px auto;
     border: none;
     box-sizing: border-box;
     text-decoration: none;
@@ -83,9 +84,10 @@ button {
     position: relative;
     cursor: pointer;
     transition: all 1s ease;
+    width: 50%;
 }
 
-button:hover {
+button:hover, .aBtn:hover{
     border: 5px solid black;
     color: black;
 
@@ -126,16 +128,20 @@ h3 {
 }
 
 #library-container {
+   
     border: 2px solid rgb(220, 200, 200);
     width: 500px;
-    height: 600px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgb(238, 223, 223), rgb(240, 232, 232));
-    opacity: 0.6;
-    border-radius: 0px 100px 0px 50px;
+    background: rgb(170,158,122);
+    background: radial-gradient(circle, rgba(170,158,122,1) 0%, rgba(237,235,218,1) 100%);
+    opacity: 0.8;
+    border-radius: 50px 0px 50px 50px;
     margin-left: 50px;
-
+    overflow: auto;
+    scrollbar-width: 16px;
+    -webkit-scrollbar-track-background: #d9cba6;
 }
 
 #library {
@@ -145,13 +151,11 @@ h3 {
 #books {
     display: flex;
     flex-direction: column;
-
-
 }
 
 #addBook {
-    width: 30%;
-    margin: 20px 15px;
+    width: 50%;
+    margin: 80px 80px;
 
 }
 

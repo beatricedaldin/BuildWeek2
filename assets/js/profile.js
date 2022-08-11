@@ -25,17 +25,11 @@ fetch (apiUrlU + "/" + userId)
 
 let updateBtn = document.createElement('a')
 updateBtn.innerHTML = "Update"
-updateBtn.href = "profile.html?id=" + userId
+updateBtn.href = "updateProfile.html?id=" + userId
 document.querySelector('.btnProfile').append(updateBtn)
 
 
 
-// let backInput = document.querySelector('.goBack')
-// let backBtn = document.createElement('a')
-// backBtn.href='index.html'
-// document.querySelector('a').append(.goBack);
-
-    
 
 
         let card = document.querySelector('#infoUser')

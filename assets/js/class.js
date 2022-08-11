@@ -61,7 +61,7 @@ function checkUserRole(role){
 
 }
 
-checkUserRole('Advanced')
+// checkUserRole('Advanced')
 
 // if (isUserAdmin()) {
 
@@ -75,5 +75,5 @@ checkUserRole('Advanced')
 // }
 
 
-console.log(getUserRole())
-export {User, Book, apiUrlB, apiUrlU, checkUserAccess, getUserRole, isUserAdmin}
+// console.log(getUserRole())
+export {User, Book, apiUrlB, apiUrlU, checkUserAccess}

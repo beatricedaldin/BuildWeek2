@@ -1,6 +1,6 @@
 import { User, Book, apiUrlB, apiUrlU } from './class.js'
 
-window.onload = function () {
+
 
 
     fetch(apiUrlU)
@@ -101,4 +101,3 @@ window.onload = function () {
 
     })
 
-}

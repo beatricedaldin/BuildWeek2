@@ -84,8 +84,7 @@ upBtn.addEventListener('click',function(e){
 })
 
 
-
-let goBackBtn = document.querySelector('#goBack')
+let goBackBtn = document.querySelector('.goBack')
 goBackBtn.addEventListener('click', function(){
     location.href = 'index.html'
 })

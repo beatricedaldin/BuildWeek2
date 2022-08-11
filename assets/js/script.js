@@ -1,5 +1,6 @@
 import { User, Book, apiUrlB, apiUrlU } from './class.js'
 
+window.onload=function(){
 
 
 fetch(apiUrlU)
@@ -24,24 +25,37 @@ fetch(apiUrlU)
 
         }
 
-
-
     })
 
 
-fetch(apiUrlB)
+    fetch(apiUrlB)
     .then(res => res.json())
     .then(books => {
         let bookSection = document.querySelector('#books')
+        
 
         for (let book of books) {
             book = new Book(book.title, book.author, book.year, book.review, book.sharedBy, book.availability, book.id)
+            
             let bookTitle = document.createElement('a')
+            let bookPopUp = document.querySelector('#bookPopUp')
             bookTitle.innerHTML = book.title
-            bookSection.append(bookTitle)
+            
+            let upBtn = document.createElement('a')
+            upBtn.classList.add('aBtn')
+            upBtn.innerHTML = 'Update it'
+            upBtn.href = 'updateBook.html?id=' + book.id
+            let delBtn = document.createElement('button')
+                delBtn.innerHTML = 'Delete it'
+                delBtn.addEventListener('click', function(){
+                    deleteBook(book.id, bookTitle, delBtn, upBtn)
+                })
+                bookSection.append(bookTitle, upBtn, delBtn)  
             bookTitle.addEventListener('click', function () {
                 console.log(book.id)
                 console.log(book)
+                
+
                 let titleB = document.querySelector('#titleB')
                 titleB.innerHTML = book.title
                 let authorB = document.querySelector('#authorB')
@@ -52,9 +66,8 @@ fetch(apiUrlB)
                 avB.innerHTML = book.availability
                 let revB = document.querySelector('#revB')
                 revB.innerHTML = book.review
+                
                 let pb = document.querySelectorAll('.pb')
-
-
                 for (let p of pb){
                 if (book.availability == 'No') {
                     Swal.fire({
@@ -64,25 +77,14 @@ fetch(apiUrlB)
                     })
                     
                         p.style.color = 'lightgrey'
-                
-
                 } else {
-                        p.style.color = 'black'
-                   
+                        p.style.color = 'black' 
                 }
                 }
-
+            
             })
-            let delBtn = document.querySelector('#delB')
-                delBtn.addEventListener('click', function(){
-                    console.log(book)
-                    deleteBook(book.id, bookTitle)
-                    for(let p of pb){
-                        p.innerHTML=''
-                    }
-                })
-           
-        }
+    
+        }   
     })
 
 
@@ -94,8 +96,7 @@ addUser.addEventListener('click', function () {
 let addBook = document.querySelector('#addBook')
 addBook.addEventListener('click', function () {
     location.href = 'createBook.html'
+
 })
-let upBtn = document.querySelector('#upB')
-upBtn.addEventListener('click', function(){
-    location.href = 'updateBook.html'
-})
+
+}

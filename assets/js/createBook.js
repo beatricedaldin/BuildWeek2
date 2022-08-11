@@ -15,10 +15,10 @@ submitBook.addEventListener('click', function(e){
     let year = document.querySelector('#year').value
     let review = document.querySelector('#review').value
     let sharedBy = document.querySelector('#sharedBy').value
-    let availability = document.querySelector('#availability')
-    var valueA = availability.options[availability.selectedIndex].text;
+    let availability = document.querySelector('#availability').value
+    //var valueA = availability.options[availability.selectedIndex].text;
 
-    let book = new Book(title, author, year, review, sharedBy, valueA)
+    let book = new Book(title, author, year, review, sharedBy, availability)
     console.log(book)
 
     let options = {

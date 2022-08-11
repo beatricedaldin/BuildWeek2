@@ -23,8 +23,7 @@ window.onload = function () {
                     userName.style.color = 'red'
                 }
 
-
-            }
+        }
 
         })
 

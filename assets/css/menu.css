@@ -87,6 +87,9 @@
   .navbar .menu-items li {
     cursor: pointer;
     font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    
   }
 
 
@@ -115,7 +118,7 @@
     height: 10px;
     border-radius: 50%;
     align-self: center;
-    margin-right: -20px;
+    margin-right: 10px;
 }
 
 li{
@@ -130,4 +133,8 @@ p{
 .userName{
 
     margin: 10px 0;
+}
+.titleList {
+  font-weight: bold;
+  margin-bottom: 50px;
 }

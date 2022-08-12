@@ -4,20 +4,20 @@ import { apiUrlB, Book } from './class.js';
     let params = new URLSearchParams(location.search);
     let bookId = params.get('id');
 
-    class Book{
-        constructor(title, author, year, review, sharedBy,availability, id){
-            this.title = title
-            this.author = author
-            this.year = year
-            this.review = review
-            this.sharedBy = sharedBy
-            this.availability = availability
-            this.id = id
+    // class Book{
+    //     constructor(title, author, year, review, sharedBy,availability, id){
+    //         this.title = title
+    //         this.author = author
+    //         this.year = year
+    //         this.review = review
+    //         this.sharedBy = sharedBy
+    //         this.availability = availability
+    //         this.id = id
     
-        }
-    }
+    //     }
+    // }
     
-    const apiUrlB = "http://localhost:3000/books"
+    // const apiUrlB = "http://localhost:3000/books"
 
 
 

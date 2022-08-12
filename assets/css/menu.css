@@ -79,9 +79,9 @@
     margin-left: -40px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
     position: relative;
     z-index: 1;
+    
   }
 
   .navbar .menu-items li {
@@ -114,6 +114,7 @@
     height: 10px;
     border-radius: 50%;
     align-self: center;
+    margin-right: -20px;
 }
 
 li{

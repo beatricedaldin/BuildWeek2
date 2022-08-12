@@ -9,6 +9,7 @@ let submitUser = document.querySelector('.submit')
 submitUser.addEventListener('click', function(e){
     e.preventDefault()
 
+   
     let name = document.querySelector('#name').value
     let surname = document.querySelector('#surname').value
     let email = document.querySelector('#email').value

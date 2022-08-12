@@ -70,24 +70,81 @@
       "id": 4
     },
     {
-      "email": "coserandom@gmail.com",
-      "password": "$2a$10$eQHnA2ZIOPDWjRIUqkYhXOh4vzcL8/w6BRukbgScZiU19gXkiPY5W",
       "name": "Edoardo",
       "surname": "Trovarelli",
+      "email": "coserandom@gmail.com",
+      "password": "$2a$10$4hlpZkjjVjw/tUu1PeirhO7xYFWQbVP0t3IZqlCNEtqfi71VUdBh6",
       "dateOfBirth": "1960-01-20",
-      "region": "Campania",
-      "rank": "Intermediate",
+      "region": "Abruzzo",
+      "rank": "Elementary",
+      "role": "user",
       "id": 5
     },
     {
-      "email": "cose@gmail.com",
-      "password": "$2a$10$/Y4G6gsPDu07RHRB8FDUJuXUFJyHhJ1qWAnE7BCj4HwfORzRP25Ta",
       "name": "Giulia",
       "surname": "Chittaro",
+      "email": "cose@gmail.com",
+      "password": "$2a$10$/Y4G6gsPDu07RHRB8FDUJuXUFJyHhJ1qWAnE7BCj4HwfORzRP25Ta",
       "dateOfBirth": "1901-01-01",
-      "region": "Abruzzo",
-      "rank": "Intermediate",
+      "region": "Marche",
+      "rank": "Advanced",
+      "role": "user",
       "id": 6
+    },
+    {
+      "name": "random",
+      "surname": "random",
+      "email": "random@gmail.com",
+      "password": "random",
+      "dateOfBirth": "1998-11-11",
+      "region": "Sicilia",
+      "rank": "Elementary",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "name": "",
+      "surname": "",
+      "email": "cane@gmail.com",
+      "password": "cane",
+      "dateOfBirth": "",
+      "region": "Sicilia",
+      "rank": "Elementary",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "name": "gatto",
+      "surname": "gatto",
+      "email": "gatto@gmail.com",
+      "password": "$2a$10$84CUrQxRgn9fOF76/RpUceRKXrAXcR7c2rlAk6Jsbva4wVkHg2N9O",
+      "dateOfBirth": "2018-07-07",
+      "region": "Lazio",
+      "rank": "Advanced",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "email": "pincopallino@gmail.com",
+      "password": "$2a$10$PAKYsZROIvh5AhDSCk1xuO.Aeh/6zqH6OpiG4XHo45jPMg2vG9/FW",
+      "name": "pincopallino",
+      "surname": "pincopallino",
+      "dateOfBirth": "2018-08-08",
+      "region": "Piemonte",
+      "rank": "Elementary",
+      "role": "user",
+      "id": 10
+    },
+    {
+      "email": "carlo@gmail.com",
+      "password": "$2a$10$ie3/kOTmWxckxDM9czHlE.ZFXjBp5OGODpE1P/Hn3LN97a48tcxTC",
+      "name": "carlo",
+      "surname": "carlo",
+      "dateOfBirth": "2013-12-12",
+      "region": "Sicilia",
+      "rank": "Elementary",
+      "role": "user",
+      "id": 11
     }
   ]
 }

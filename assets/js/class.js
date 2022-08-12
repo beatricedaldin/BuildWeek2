@@ -1,7 +1,7 @@
 
 
 class User{
-    constructor(name, surname, email, password, dateOfBirth, region, rank, id, role){
+    constructor(name, surname, email, password, dateOfBirth, region, rank, role, id){
         this.name = name
         this.surname = surname
         this.email = email
@@ -9,8 +9,8 @@ class User{
         this.dateOfBirth = dateOfBirth
         this.region = region
         this.rank = rank
-        this.id = id
         this.role = 'user'
+        this.id = id
     }
 }
 

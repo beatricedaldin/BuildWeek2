@@ -33,9 +33,9 @@ fetch(apiUrlU+'/'+userId)
     let dateOfBirth = document.querySelector('#dateOfBirth')
     let region = document.querySelector('#region')
     let rank = document.querySelector('#rank')
-    let id = document.querySelector('#id')
 
-    //let valueA = availability.options[availability.selectedIndex].text; 
+
+
 
 
     name.value = user.name
@@ -45,13 +45,13 @@ fetch(apiUrlU+'/'+userId)
     dateOfBirth.value = user.dateOfBirth
     region.value = user.region
     rank.value = user.rank
-    // id.value = user.id
+  
 
     
     
 })
 
-let upBtn = document.querySelector('#update');
+let upBtn = document.querySelector('.update');
 
 upBtn.addEventListener('click',function(e){
     e.preventDefault();
@@ -62,12 +62,14 @@ upBtn.addEventListener('click',function(e){
     let email = document.querySelector('#email').value
     let password = document.querySelector('#password').value
     let dateOfBirth = document.querySelector('#dateOfBirth').value
-    let region = document.querySelector('#region').value
+    let region = document.querySelector('#region')
+    let valueR = region.options[region.selectedIndex].text;
     let rank = document.querySelector('#rank').value
    
     //var valueA = availability.options[availability.selectedIndex].text;
 
-    let user = new User(name, surname, email, password, dateOfBirth, region, rank)
+    let user = new User(name, surname, email, password, dateOfBirth, valueR, rank)
+    console.log(user);
 
     let options = {
         method: 'PUT',
@@ -86,7 +88,7 @@ upBtn.addEventListener('click',function(e){
             title: 'Profile updated',
             text:`The profile ${user.name} has just been updated`,
             showConfirmButton: false,
-            timer: 3000
+            timer: 2000
         })
     })
 })

@@ -1,150 +1,16 @@
 {
-  "books": [
-    {
-      "title": "Sit esse dicta duis",
-      "author": "Aute sed ducimus do",
-      "year": "2000",
-      "review": "Accusamus voluptas e",
-      "sharedBy": "Est aliquip ipsum i",
-      "availability": "No",
-      "id": 19
-    },
-    {
-      "title": "Facilis eaque repreh",
-      "author": "Aut sit nulla sed e",
-      "year": "1970",
-      "review": "Expedita minima sit ",
-      "sharedBy": "Recusandae Et omnis",
-      "availability": "No",
-      "id": 20
-    },
-    {
-      "title": "Deserunt deserunt ip",
-      "author": "Omnis eos ullam offi",
-      "year": "2015",
-      "review": "Et omnis ea temporib",
-      "sharedBy": "Reprehenderit volupt",
-      "availability": "No",
-      "id": 22
-    }
-  ],
+  "books": [],
   "users": [
     {
-      "name": "Giulia",
-      "surname": "Chittaro",
-      "dateOfBirth": "1993-05-27",
-      "region": "Piemonte",
-      "rank": "Elementary",
-      "id": 1
-    },
-    {
-      "email": "nonloso@gmail.com",
-      "password": "$2a$10$HvdqXEDYgvMNy8pVTppjkeJ46LoFLQpwps0krqF/IzwyT.Jjokqcm",
-      "name": "qwerty",
-      "surname": "qwerty",
-      "dateOfBirth": "1994-01-10",
-      "region": "Sicilia",
-      "rank": "Elementary",
-      "id": 2
-    },
-    {
-      "email": "alessandrocrescimanni@gmail.com",
-      "password": "$2a$10$PCg3XOLwEF0dPCntQE1lOuNIx.fBlMyEJvq/FCZpmzn.WqXuf9n1K",
-      "name": "Alessandro",
-      "surname": "Crescimanni",
-      "dateOfBirth": "1994-01-10",
-      "region": "Abruzzo",
-      "rank": "Elementary",
-      "role": "admin",
-      "id": 3
-    },
-    {
-      "email": "carmine@gmail.com",
-      "password": "$2a$10$NvuxRlir1YAvGNJVJkX6Je6.4eeZ42WhHlmScpp0aVWi4EY9MrMAO",
-      "name": "car",
-      "surname": "mine",
-      "dateOfBirth": "1990-01-10",
-      "region": "Sicilia",
-      "rank": "Elementary",
-      "role": "user",
-      "id": 4
-    },
-    {
-      "name": "Edoardo",
-      "surname": "Trovarelli",
-      "email": "coserandom@gmail.com",
-      "password": "$2a$10$1Vd2M7wcHF62FrcM/sPhq.OWolEz.SWnwzu3KAe6AMJZnGHq3KfBy",
-      "dateOfBirth": "1960-01-20",
-      "region": "Friuli-Venezia Giulia",
-      "rank": "Advanced",
-      "role": "user",
-      "id": 5
-    },
-    {
-      "name": "Giulia",
-      "surname": "Chittaro",
-      "email": "cose@gmail.com",
-      "password": "$2a$10$/Y4G6gsPDu07RHRB8FDUJuXUFJyHhJ1qWAnE7BCj4HwfORzRP25Ta",
-      "dateOfBirth": "1901-01-01",
-      "region": "Marche",
-      "rank": "Advanced",
-      "role": "user",
-      "id": 6
-    },
-    {
-      "email": "random@gmail.com",
-      "password": "$2a$10$y3WTzm5FGLN4Levb8OJrreW7f/W88r1WfW4regsJLJpJA.22soSKG",
-      "name": "random",
-      "surname": "random",
-      "dateOfBirth": "1999-10-10",
-      "region": "Sicilia",
-      "rank": "Advanced",
-      "role": "user",
-      "id": 7
-    },
-    {
-      "email": "canino@gmail.com",
-      "password": "$2a$10$EkC6Zq63MA6Jkll7TFiJ8.Rv1C.wNxJgHrxrMCzPM5oQPoNWT.eNm",
-      "name": "canino",
-      "surname": "canino",
-      "dateOfBirth": "1994-12-10",
-      "region": "Sicilia",
-      "rank": "Elementary",
-      "role": "user",
-      "id": 8
-    },
-    {
-      "name": "gatto",
-      "surname": "gatto",
-      "email": "gatto@gmail.com",
-      "password": "$2a$10$84CUrQxRgn9fOF76/RpUceRKXrAXcR7c2rlAk6Jsbva4wVkHg2N9O",
-      "dateOfBirth": "2018-07-07",
+      "email": "trovarelliedoardo@gmail.com",
+      "password": "$2a$10$VmWSDj5ogt9ZKLzFoVAfuukyJD3LIE1TVIB.7.ada7Cdsq7XQh/vG",
+      "name": "edoardo",
+      "surname": "trovarelli",
+      "dateOfBirth": "1995-01-12",
       "region": "Lazio",
       "rank": "Advanced",
       "role": "user",
-      "id": 9
-    },
-    {
-      "email": "pincopallino@gmail.com",
-      "password": "$2a$10$PAKYsZROIvh5AhDSCk1xuO.Aeh/6zqH6OpiG4XHo45jPMg2vG9/FW",
-      "name": "pincopallino",
-      "surname": "pincopallino",
-      "dateOfBirth": "2018-08-08",
-      "region": "Piemonte",
-      "rank": "Elementary",
-      "role": "user",
-      "id": 10
-    },
-    {
-      "email": "carlo@gmail.com",
-      "password": "$2a$10$ie3/kOTmWxckxDM9czHlE.ZFXjBp5OGODpE1P/Hn3LN97a48tcxTC",
-      "name": "carlo",
-      "surname": "carlo",
-      "dateOfBirth": "2013-12-12",
-      "region": "Sicilia",
-      "rank": "Elementary",
-      "role": "user",
-      "id": 11
+      "id": 1
     }
   ]
 }

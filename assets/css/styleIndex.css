@@ -55,17 +55,17 @@ span {
     }
 }
 
-#users {
-    position: absolute;
-    top: 10px;
-    right: -5px;
-}
 
-#addUser {
+#logUser {
     width: 100px;
-    position: absolute;
+   
     top: 0;
-    left: -150px;
+    margin-top: 20px;
+    position: absolute;
+    left: 2300px;
+    width: 120px;
+    height: 70px;
+   
 }
 
 button , .aBtn {
@@ -141,9 +141,15 @@ h3 {
     opacity: 0.8;
     border-radius: 50px 0px 0px 50px;
     margin-left: 50px;
-    overflow: auto;
+    overflow-y: auto;
     scrollbar-width: 16px;
     -webkit-scrollbar-track-background: #d9cba6;
+   
+    
+}
+
+#library-container::-webkit-scrollbar {
+    display: none;
 }
 
 #library {
@@ -194,6 +200,7 @@ h3 {
     height: 60px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: -500px;
 }
 
 #container{

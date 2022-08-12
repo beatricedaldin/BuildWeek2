@@ -52,23 +52,25 @@
       "id": 4
     },
     {
-      "email": "coserandom@gmail.com",
-      "password": "$2a$10$eQHnA2ZIOPDWjRIUqkYhXOh4vzcL8/w6BRukbgScZiU19gXkiPY5W",
       "name": "Edoardo",
       "surname": "Trovarelli",
+      "email": "coserandom@gmail.com",
+      "password": "$2a$10$4hlpZkjjVjw/tUu1PeirhO7xYFWQbVP0t3IZqlCNEtqfi71VUdBh6",
       "dateOfBirth": "1960-01-20",
-      "region": "Campania",
-      "rank": "Intermediate",
+      "region": "Abruzzo",
+      "rank": "Elementary",
+      "role": "user",
       "id": 5
     },
     {
-      "email": "cose@gmail.com",
-      "password": "$2a$10$/Y4G6gsPDu07RHRB8FDUJuXUFJyHhJ1qWAnE7BCj4HwfORzRP25Ta",
       "name": "Giulia",
       "surname": "Chittaro",
+      "email": "cose@gmail.com",
+      "password": "$2a$10$/Y4G6gsPDu07RHRB8FDUJuXUFJyHhJ1qWAnE7BCj4HwfORzRP25Ta",
       "dateOfBirth": "1901-01-01",
-      "region": "Abruzzo",
-      "rank": "Intermediate",
+      "region": "Marche",
+      "rank": "Advanced",
+      "role": "user",
       "id": 6
     },
     {

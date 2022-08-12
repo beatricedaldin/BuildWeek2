@@ -16,7 +16,8 @@ fetch(apiUrlU)
             userName.classList.add('userName')
             userName.innerHTML = user.name + '' + user.surname
             userName.href = 'profile.html?id=' + user.id
-
+            userName.style.textDecoration = 'none'
+            userName.style.color = 'black'
             let pointer = document.createElement('p')
             pointer.classList.add('round')
 
@@ -36,13 +37,13 @@ fetch(apiUrlU)
                 }
             }
 
-            if (user.rank == 'Elementary') {
-                userName.style.color = 'green'
-            } else if (user.rank == 'Intermediate') {
-                userName.style.color = 'blue'
-            } else if (user.rank == 'Advanced') {
-                userName.style.color = 'red'
-            }
+            // if (user.rank == 'Elementary') {
+            //     userName.style.color = 'green'
+            // } else if (user.rank == 'Intermediate') {
+            //     userName.style.color = 'blue'
+            // } else if (user.rank == 'Advanced') {
+            //     userName.style.color = 'red'
+            // }
 
         }
 

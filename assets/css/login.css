@@ -1,0 +1,43 @@
+body {
+    font-size: 2.2rem;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../img/patternlegno2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 5px black;
+    
+}
+
+.container {
+    margin-top: 400px;
+    margin-left: 250px;
+    
+}
+
+button {
+    font-size: 1.5rem;
+}
+
+input {
+    font-size: 2rem;
+}
+
+#dimenticato  {
+    margin-left: 250px;
+}
+
+#registrati {
+    margin-left: 250px;
+}
+
+a {
+    color : white;
+}
+
+img {
+    margin-left: 1400px;
+    margin-top: -600px;
+    height: 93vh;
+    max-width: 100%;
+}

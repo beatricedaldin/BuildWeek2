@@ -26,7 +26,7 @@
    
 
     <section id="users">
-        <button id="addUser">Login</button>
+        <button id="logUser">Login</button>
         <div id="myUser"></div>
     </section>
 
@@ -68,8 +68,17 @@
         let access = checkUserAccess()
         if (!access) {
             
-            
-            guestUser.style.display = "none"
+            let userSection = document.querySelector('.menu-items')
+            userSection.remove()
+
+            let addBook = document.querySelector('#addBook')
+            addBook.remove()
+
+            let updateBook = document.querySelector('.aBtn')
+            updateBook.remove()
+
+            let delBook = document.querySelector('.delBtn')
+            delBook.remove()
 
         }
     </script>

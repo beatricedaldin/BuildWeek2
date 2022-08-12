@@ -1,7 +1,7 @@
 
 
 class User{
-    constructor(name, surname, email, password, dateOfBirth, region, rank, id){
+    constructor(name, surname, email, password, dateOfBirth, region, rank, id, role){
         this.name = name
         this.surname = surname
         this.email = email
@@ -10,7 +10,7 @@ class User{
         this.region = region
         this.rank = rank
         this.id = id
-        this.role = 'User'
+        this.role = 'user'
     }
 }
 
@@ -61,8 +61,6 @@ function checkUserRole(role){
 
 }
 
-checkUserRole('Advanced')
-
 // if (isUserAdmin()) {
 
 
@@ -75,5 +73,4 @@ checkUserRole('Advanced')
 // }
 
 
-console.log(getUserRole())
-export {User, Book, apiUrlB, apiUrlU, checkUserAccess, getUserRole, isUserAdmin}
+export {User, Book, apiUrlB, apiUrlU, checkUserAccess, getUserRole, isUserAdmin, checkUserRole}

@@ -90,9 +90,9 @@ window.onload = function () {
         })
 
 
-    let addUser = document.querySelector('#addUser')
-    addUser.addEventListener('click', function () {
-        location.href = 'createUser.html'
+    let logUser = document.querySelector('#logUser')
+    logUser.addEventListener('click', function () {
+        location.href = 'login.html'
     })
 
     let addBook = document.querySelector('#addBook')

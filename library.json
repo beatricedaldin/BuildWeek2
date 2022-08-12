@@ -57,60 +57,45 @@
   ],
   "users": [
     {
-      "name": "Giulia",
-      "surname": "Chittaro",
-      "dateOfBirth": "1993-05-27",
-      "region": "Piemonte",
-      "rank": "Elementary",
+      "email": "alessandrocrescimanni@gmail.com",
+      "password": "$2a$10$4nqo6Ft5XTXnKZxpN3gZFuRvcGPYBeesbhAH54n./wJ8C1zqk8vc.",
+      "name": "Alessandro",
+      "surname": "Crescimanni",
+      "dateOfBirth": "1994-01-10",
+      "region": "Sicilia",
+      "rank": "Advanced",
       "id": 1
     },
     {
-      "name": "fdsfsdfdsf",
-      "surname": "dsfsdfds",
-      "dateOfBirth": "2022-08-02",
+      "email": "nonloso@gmail.com",
+      "password": "$2a$10$HvdqXEDYgvMNy8pVTppjkeJ46LoFLQpwps0krqF/IzwyT.Jjokqcm",
+      "name": "qwerty",
+      "surname": "qwerty",
+      "dateOfBirth": "1994-01-10",
       "region": "Sicilia",
       "rank": "Elementary",
       "id": 2
     },
     {
-      "email": "alessandrocrescimanni@gmail.com",
-      "password": "$2a$10$PCg3XOLwEF0dPCntQE1lOuNIx.fBlMyEJvq/FCZpmzn.WqXuf9n1K",
-      "name": "Alessandro",
-      "surname": "Crescimanni",
+      "email": "waterstone78@gmail.com",
+      "password": "$2a$10$8gS.WxPHKECc57qJfP0MWuUeN8p2X0ZgW9lk/KtHSy7nSaBMGL3Ky",
+      "name": "qwerty",
+      "surname": "qwerty",
       "dateOfBirth": "1994-01-10",
       "region": "Sicilia",
       "rank": "Elementary",
       "id": 3
     },
     {
-      "email": "nonloso@gmail.com",
-      "password": "$2a$10$XHBDmSEhNYAt8YgaU8rDhervt8MsnNojWPcxdrzsyuTxA9RdIci6u",
-      "name": "Michele",
-      "surname": "Tedesco",
-      "dateOfBirth": "1990-10-10",
-      "region": "Emilia-Romagna",
-      "rank": "Advanced",
+      "email": "carmine@gmail.com",
+      "password": "$2a$10$NvuxRlir1YAvGNJVJkX6Je6.4eeZ42WhHlmScpp0aVWi4EY9MrMAO",
+      "name": "car",
+      "surname": "mine",
+      "dateOfBirth": "1990-01-10",
+      "region": "Sicilia",
+      "rank": "Elementary",
+      "role": "user",
       "id": 4
-    },
-    {
-      "email": "coserandom@gmail.com",
-      "password": "$2a$10$eQHnA2ZIOPDWjRIUqkYhXOh4vzcL8/w6BRukbgScZiU19gXkiPY5W",
-      "name": "Edoardo",
-      "surname": "Trovarelli",
-      "dateOfBirth": "1960-01-20",
-      "region": "Campania",
-      "rank": "Intermediate",
-      "id": 5
-    },
-    {
-      "email": "cose@gmail.com",
-      "password": "$2a$10$/Y4G6gsPDu07RHRB8FDUJuXUFJyHhJ1qWAnE7BCj4HwfORzRP25Ta",
-      "name": "Giulia",
-      "surname": "Chittaro",
-      "dateOfBirth": "1901-01-01",
-      "region": "Abruzzo",
-      "rank": "Intermediate",
-      "id": 6
     }
   ]
 }

@@ -17,7 +17,7 @@ h1 {
     margin: 40px 50px;
   }
 
-  input[type='text'], [type='number'], #availability, #review , #grade  , #region , #date {
+  input[type='text'], [type='number'], #email, #password, #availability, #review, #grade, #region, #date {
  background: none;
   border: none;
  border-bottom: solid 2px black;

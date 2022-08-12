@@ -1,13 +1,22 @@
 {
   "books": [
     {
-      "title": "dfdfdf34343434343434",
-      "author": "df dfdf",
-      "year": "1234",
-      "review": "ererererer",
-      "sharedBy": "fdegdfgfgh1234",
+      "title": "il signore degli anelli",
+      "author": "tolkien",
+      "year": "1854",
+      "review": "",
+      "sharedBy": "topolino",
       "availability": "Yes",
-      "id": 2
+      "id": 5
+    },
+    {
+      "title": "il libro della giungla",
+      "author": "edoardo trovarelli",
+      "year": "2000",
+      "review": "",
+      "sharedBy": "maria",
+      "availability": "Yes",
+      "id": 6
     }
   ],
   "users": [
@@ -106,6 +115,39 @@
       "rank": "Advanced",
       "role": "admin",
       "id": 10
+    },
+    {
+      "name": "paolino",
+      "surname": "paperino",
+      "email": "paperino@gmail.com",
+      "password": "$2a$10$Tk20cnUtsSkyIwVdXGoE9egX14T4zOvrvWOd2eZRMYqUBcat4PmsC",
+      "dateOfBirth": "1980-09-10",
+      "region": "Veneto",
+      "rank": "Intermediate",
+      "role": "admin",
+      "id": 11
+    },
+    {
+      "email": "topolino@gmail.com",
+      "password": "$2a$10$pmq5vyAn8YnirN05rosCUuMvQ2s0NBFCFyS6OTIXqgij3Q2fOgoBC",
+      "name": "topolino",
+      "surname": "topolino",
+      "dateOfBirth": "1992-12-12",
+      "region": "Calabria",
+      "rank": "Elementary",
+      "role": "user",
+      "id": 12
+    },
+    {
+      "name": "maria",
+      "surname": "bianchi",
+      "email": "mariabianchi@gmail.com",
+      "password": "$2a$10$DGkbQQzO1qCIxacGnSHdFu8QjyPHsefBNqxBMDsSF01xWl7M.oeyi",
+      "dateOfBirth": "1990-01-12",
+      "region": "Sardegna",
+      "rank": "Intermediate",
+      "role": "user",
+      "id": 13
     }
   ]
 }

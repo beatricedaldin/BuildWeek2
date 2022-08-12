@@ -121,7 +121,9 @@ fetch(apiUrlB)
 
 
                 let show = document.querySelector("#bookPopUp")
-                show.classList.add('show')
+                show.style.opacity = '1'
+
+                
                 for (let p of pb) {
                     if (book.availability == 'No') {
 
@@ -134,7 +136,7 @@ fetch(apiUrlB)
                 })
                 bookTitle.addEventListener('dblclick', function (){
                     let show = document.querySelector("#bookPopUp")
-                    show.classList.remove('show')
+                    show.style.opacity = '0'
                 })
             }
         })

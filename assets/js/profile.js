@@ -2,15 +2,19 @@ const apiUrlU = "http://localhost:3000/users"
 
 
 class User{
-    constructor(name, surname, dateOfBirth, region, rank, id){
+    constructor(name, surname, email, password, dateOfBirth, region, rank, role, id){
         this.name = name
         this.surname = surname
+        this.email = email
+        this.password = password
         this.dateOfBirth = dateOfBirth
         this.region = region
         this.rank = rank
+        this.role = 'user'
         this.id = id
     }
 }
+
 
 
 let params = new URLSearchParams(location.search);
@@ -40,6 +44,7 @@ document.querySelector('.btnProfile').append(updateBtn)
         descriptionName.innerHTML = ' ' + user.name + ' ' + user.surname
 
 
+
         let descriptionDateOfBirth = card.querySelector('#dateOfBirth')
         descriptionDateOfBirth.innerHTML = 'Date of birth : ' + user.dateOfBirth
 
@@ -49,8 +54,11 @@ document.querySelector('.btnProfile').append(updateBtn)
         let descriptionRank = card.querySelector('#rank')
         descriptionRank.innerHTML = 'Rank : ' + user.rank
 
-        let descriptionId = card.querySelector('#id')
-        descriptionId.innerHTML = 'Id : ' + user.id
+        let descrptionRole = card.querySelector('#role')
+        descriptionRole.innerHTML = 'Role : ' + user.role
+
+        // let descriptionId = card.querySelector('#id')
+        // descriptionId.innerHTML = 'Id : ' + user.id
 
         lista.append(card)
     }

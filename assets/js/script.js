@@ -104,19 +104,19 @@ fetch(apiUrlB)
                     }
                 }
 
-            })
-            bookTitle.addEventListener('dblclick', function () {
-                let show = document.querySelector("#bookPopUp")
-                show.classList.remove('show')
-            })
-        }
+                })
+                bookTitle.addEventListener('dblclick', function (){
+                    let show = document.querySelector("#bookPopUp")
+                    show.classList.remove('show')
+                })
+            }
+        })
+
+
+    let logUser = document.querySelector('#logUser')
+    logUser.addEventListener('click', function () {
+        location.href = 'login.html'
     })
-
-
-let addUser = document.querySelector('#addUser')
-addUser.addEventListener('click', function () {
-    location.href = 'createUser.html'
-})
 
 let addBook = document.querySelector('#addBook')
 addBook.addEventListener('click', function () {

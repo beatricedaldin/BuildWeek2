@@ -18,8 +18,9 @@ submitUser.addEventListener('click', function(e){
     var valueR = region.options[region.selectedIndex].text
     let grade = document.querySelector('#grade')
     var valueG = grade.options[grade.selectedIndex].text
+    var role = User.role
 
-    let user = new User(name, surname, email, password, date, valueR, valueG)
+    let user = new User(name, surname, email, password, date, valueR, valueG, role)
     console.log(user)
 
     let options = {
@@ -44,8 +45,8 @@ submitUser.addEventListener('click', function(e){
         })
         document.querySelector('#myForm').reset();
 
-        location.href = "login.html";
+        
 
     })
 
-})
+location.href = "login.html";})

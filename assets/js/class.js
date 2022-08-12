@@ -1,7 +1,7 @@
 
 
 class User{
-    constructor(name, surname, email, password, dateOfBirth, region, rank, id){
+    constructor(name, surname, email, password, dateOfBirth, region, rank, id, role){
         this.name = name
         this.surname = surname
         this.email = email
@@ -10,7 +10,7 @@ class User{
         this.region = region
         this.rank = rank
         this.id = id
-        this.role = 'User'
+        this.role = 'user'
     }
 }
 
@@ -73,7 +73,5 @@ function checkUserAccess(){
 //     mostra.remove()
 
 // }
-
-
 
 export {User, Book, apiUrlB, apiUrlU, checkUserAccess}

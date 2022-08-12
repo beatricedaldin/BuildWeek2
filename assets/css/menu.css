@@ -68,8 +68,10 @@
 
   .navbar .menu-items {
     padding-top: 100px;
-    background: #fff;
-    height: 100vh;
+    background: rgb(170,158,122);
+    background: radial-gradient(circle, rgba(170,158,122,1) 0%, rgba(237,235,218,1) 100%);
+    opacity: 0.8;
+    height: 80vh;
     max-width: 300px;
     transform: translate(-150%);
     display: flex;

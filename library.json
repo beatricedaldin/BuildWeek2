@@ -45,10 +45,10 @@
       "name": "Edoardo",
       "surname": "Trovarelli",
       "email": "coserandom@gmail.com",
-      "password": "$2a$10$4hlpZkjjVjw/tUu1PeirhO7xYFWQbVP0t3IZqlCNEtqfi71VUdBh6",
+      "password": "$2a$10$1Vd2M7wcHF62FrcM/sPhq.OWolEz.SWnwzu3KAe6AMJZnGHq3KfBy",
       "dateOfBirth": "1960-01-20",
-      "region": "Abruzzo",
-      "rank": "Elementary",
+      "region": "Friuli-Venezia Giulia",
+      "rank": "Advanced",
       "role": "user",
       "id": 5
     },

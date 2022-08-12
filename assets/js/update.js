@@ -1,4 +1,5 @@
 
+import { apiUrlB, Book } from './class.js';
     
     let params = new URLSearchParams(location.search);
     let bookId = params.get('id');

@@ -1,31 +1,13 @@
 {
   "books": [
     {
-      "title": "Sit esse dicta duis",
-      "author": "Aute sed ducimus do",
-      "year": "2000",
-      "review": "Accusamus voluptas e",
-      "sharedBy": "Est aliquip ipsum i",
-      "availability": "No",
-      "id": 19
-    },
-    {
-      "title": "Facilis eaque repreh",
-      "author": "Aut sit nulla sed e",
-      "year": "1970",
-      "review": "Expedita minima sit ",
-      "sharedBy": "Recusandae Et omnis",
-      "availability": "No",
-      "id": 20
-    },
-    {
-      "title": "Deserunt deserunt ip",
-      "author": "Omnis eos ullam offi",
-      "year": "2015",
-      "review": "Et omnis ea temporib",
-      "sharedBy": "Reprehenderit volupt",
-      "availability": "No",
-      "id": 22
+      "title": "sdhfksdhf",
+      "author": "sdfsdfgsfdg",
+      "year": "1234",
+      "review": "sdfgsdfgsdfg",
+      "sharedBy": "fdegdfg",
+      "availability": "Yes",
+      "id": 1
     }
   ],
   "users": [
@@ -55,7 +37,7 @@
       "dateOfBirth": "1994-01-10",
       "region": "Abruzzo",
       "rank": "Elementary",
-      "role": "User",
+      "role": "admin",
       "id": 3
     },
     {
@@ -88,6 +70,28 @@
       "region": "Abruzzo",
       "rank": "Intermediate",
       "id": 6
+    },
+    {
+      "email": "random@gmail.com",
+      "password": "$2a$10$y3WTzm5FGLN4Levb8OJrreW7f/W88r1WfW4regsJLJpJA.22soSKG",
+      "name": "random",
+      "surname": "random",
+      "dateOfBirth": "1999-10-10",
+      "region": "Sicilia",
+      "rank": "Advanced",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "email": "canino@gmail.com",
+      "password": "$2a$10$EkC6Zq63MA6Jkll7TFiJ8.Rv1C.wNxJgHrxrMCzPM5oQPoNWT.eNm",
+      "name": "canino",
+      "surname": "canino",
+      "dateOfBirth": "1994-12-10",
+      "region": "Sicilia",
+      "rank": "Elementary",
+      "role": "user",
+      "id": 8
     }
   ]
 }

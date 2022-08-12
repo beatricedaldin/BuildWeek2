@@ -43,10 +43,11 @@ submitUser.addEventListener('click', function(e){
             showConfirmButton: false,
             timer: 3000
         })
-        document.querySelector('#myForm').reset();
+        // document.querySelector('#myForm').reset();
 
         
 
     })
 
-location.href = "login.html";})
+location.href = "login.html";
+})

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    
+
     <nav class="navbar">
         <div class="navbar-container container">
             <input type="checkbox" name="" id="">
@@ -27,25 +27,25 @@
             </div>
             <ul class="menu-items">
                 <li>LISTA UTENTI</li>
-                
+
             </ul>
-    
+
         </div>
     </nav>
 
-        <h1 id="title">
-            Enter in our Library 
-            <span> 
-                My Library 
-            </span>
-            You will not regret 
-        </h1> 
-   
+    <h1 id="title">
+        Enter in our Library
+        <span>
+            My Library
+        </span>
+        You will not regret
+    </h1>
+
 
     <section id="users">
-        
+
         <button id="logUser">Login</button>
-    
+
     </section>
 
 
@@ -78,20 +78,23 @@
             </div>
         </div>
 
-        
+
     </section>
 
     <script type="module">
-        import {checkUserAccess} from "./assets/js/class.js"
+        import { checkUserAccess, isUserAdmin } from "./assets/js/class.js"
         let access = checkUserAccess()
         if (!access) {
-            
-            
-            guestUser.style.display = "none"
 
-    }
-</script> -->
-    
+            let removeAccessTo = document.querySelector('#addBook')
+            removeAccessTo.remove();
+
+            let usersList = document.querySelector('.navbar');
+            usersList.remove();
+        
+        }
+    </script>
+
     <script type="module" src="./assets/js/script.js"></script>
 
     <script src="./assets/js/delete.js"></script>
@@ -100,5 +103,3 @@
 </body>
 
 </html>
-
-

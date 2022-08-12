@@ -31,7 +31,21 @@
         <input type="button" value="Go Back" class="goBack">
     </form>
 
-    
+    <script type="module">
+        import { checkUserAccess, checkUserRole } from "./assets/js/class.js"
+        let access = checkUserAccess()
+        let checkRole = checkUserRole(role)
+        if (!access) {
+
+            location.href = 'index.html'
+
+        } else if (checkRole != 'admin'){ 
+
+            let removeForm = document.querySelector('#myForm')
+            removeForm.remove()
+
+        }
+    </script>
     <script type="module" src="./assets/js/update.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

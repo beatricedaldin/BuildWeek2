@@ -1,4 +1,4 @@
-import { User, Book, apiUrlB, apiUrlU } from './class.js'
+import { User, Book, apiUrlB, apiUrlU, isUserAdmin } from './class.js'
 
 
 
@@ -66,16 +66,42 @@ fetch(apiUrlB)
             let upBtn = document.createElement('a')
             upBtn.classList.add('aBtn')
             upBtn.innerHTML = 'Update it'
-            upBtn.href = 'updateBook.html?id=' + book.id
+            upBtn.addEventListener('click', function () {
+
+                let adminCheck = isUserAdmin();
+                if (adminCheck) {
+
+                    upBtn.href = 'updateBook.html?id=' + book.id
+
+                } else {
+
+
+                    alert('Access Denied: admin only')
+
+                }
+
+            })
+            
             let delBtn = document.createElement('button')
             delBtn.classList.add('delBtn')
             delBtn.innerHTML = 'Delete it'
            
             delBtn.addEventListener('click', function () {
+
+                let adminCheck = isUserAdmin();
+
+                if (adminCheck) {
+
                 deleteBook(book.id, bookTitle, delBtn, upBtn)
                 for (let p of pb) {
                     p.innerHTML = ''
+                    
+                }} else {
+
+                    alert('Access Denied: admin only')
+
                 }
+
             })
             bookSection.append(bookTitle, upBtn, delBtn)
             bookTitle.addEventListener('click', function () {

@@ -1,5 +1,5 @@
 
-import { apiUrlB, Book } from './class.js';
+
     
     let params = new URLSearchParams(location.search);
     let bookId = params.get('id');
@@ -46,7 +46,7 @@ fetch(apiUrlB+'/'+bookId)
     
 })
 
-let upBtn = document.querySelector('#update');
+let upBtn = document.querySelector('.update');
 
 upBtn.addEventListener('click',function(e){
     e.preventDefault();

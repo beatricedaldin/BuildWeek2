@@ -26,6 +26,15 @@
       "sharedBy": "Reprehenderit volupt",
       "availability": "No",
       "id": 22
+    },
+    {
+      "title": "il giardino",
+      "author": "mario rossi",
+      "year": "2008",
+      "review": "",
+      "sharedBy": "marco",
+      "availability": "Yes",
+      "id": 23
     }
   ],
   "users": [
@@ -73,10 +82,10 @@
       "name": "Edoardo",
       "surname": "Trovarelli",
       "email": "coserandom@gmail.com",
-      "password": "$2a$10$4hlpZkjjVjw/tUu1PeirhO7xYFWQbVP0t3IZqlCNEtqfi71VUdBh6",
+      "password": "$2a$10$1Vd2M7wcHF62FrcM/sPhq.OWolEz.SWnwzu3KAe6AMJZnGHq3KfBy",
       "dateOfBirth": "1960-01-20",
-      "region": "Abruzzo",
-      "rank": "Elementary",
+      "region": "Friuli-Venezia Giulia",
+      "rank": "Advanced",
       "role": "user",
       "id": 5
     },
@@ -145,6 +154,28 @@
       "rank": "Elementary",
       "role": "user",
       "id": 11
+    },
+    {
+      "name": "rocco",
+      "surname": "rossi",
+      "email": "rocco@gmail.com",
+      "password": "$2a$10$pEtwmspQx.suwpxD2/hNsehRR.n2e/sZjg9nl07TPyTGomGLs7ge.",
+      "dateOfBirth": "1970-03-03",
+      "region": "Veneto",
+      "rank": "Intermediate",
+      "role": "user",
+      "id": 12
+    },
+    {
+      "email": "buham@mailinator.com",
+      "password": "$2a$10$CWkhYLN0RqwUPYVEzfCY5OzBYSwlhFIk/WbGOWutk8et74HgZ8fwO",
+      "name": "Rhea Woodward",
+      "surname": "Herrera",
+      "dateOfBirth": "1970-05-19",
+      "region": "Molise",
+      "rank": "Elementary",
+      "role": "user",
+      "id": 13
     }
   ]
 }

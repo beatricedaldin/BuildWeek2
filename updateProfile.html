@@ -12,19 +12,21 @@
 <body>
 
 
+<<<<<<< HEAD
+
+<h1>Update your profile</h1>
+    <form id="updateform">
+        
 
 
-
-    <h1>Update your profile</h1>
-    <form id="updateForm">
-
-        <input type="email" id="email" name="email" placeholder="Type your Email... ">
-            
-            <input type="password" id="password" name="password" placeholder="Type your password..."> <br>
-
+        
         <input type="text" id="name"  name="name" placeholder="Type your First Name... ">
 
         <input type="text" id="surname"  name="surname" placeholder="Type your Last Name...">
+        
+        <input type="email" id="email" name="email" placeholder="Type your Email... ">
+
+        <input type="password" id="password" name="password" placeholder="Type your password...">
 
         <input type="date" id="dateOfBirth"  name="dateOfBirth" min="1900-01-01" max="2022-08-08">
 
@@ -58,15 +60,13 @@
             <option>Umbria</option>
         </select>
 
-<div id="form-buttons">
-        <input id="update" type="submit" value="Update" >
-        <input id="goBack" type="button" value="Go Back" >
-
-    </div>
+        <div id="form-buttons">
+            <input id="update" type="submit" value="Update" >
+            <input id="goBack" type="button" value="Go Back" >
+        </div>
     </form>
 
-
-    <!-- <script type="module">
+    <script type="module">
         import { User, checkUserAccess } from "./assets/js/class.js"
         let access = checkUserAccess()
         let params = new URLSearchParams(location.search);
@@ -75,7 +75,7 @@
         let actualUser = localStorage.getItem('user')
         let parsedUser = JSON.parse(actualUser)
         let actualId = parsedUser.id
-        console.log(parsedUser.id)
+        console.log(actualId)
         if (!access) {
 
             location.href = 'index.html'
@@ -83,10 +83,10 @@
         }
         if (userId != actualId) {
 
-            // location.href = 'index.html'
+            location.href = 'index.html'
 
-        } -->
-    <!-- </script> -->
+        }
+    </script>
     <script type="module" src="./assets/js/updateprofile.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

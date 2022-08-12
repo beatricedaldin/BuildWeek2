@@ -1,16 +1,111 @@
 {
-  "books": [],
+  "books": [
+    {
+      "title": "dfdfdf34343434343434",
+      "author": "df dfdf",
+      "year": "1234",
+      "review": "ererererer",
+      "sharedBy": "fdegdfgfgh1234",
+      "availability": "Yes",
+      "id": 2
+    }
+  ],
   "users": [
     {
-      "email": "trovarelliedoardo@gmail.com",
-      "password": "$2a$10$VmWSDj5ogt9ZKLzFoVAfuukyJD3LIE1TVIB.7.ada7Cdsq7XQh/vG",
-      "name": "edoardo",
-      "surname": "trovarelli",
-      "dateOfBirth": "1995-01-12",
-      "region": "Lazio",
+      "name": "Giulia",
+      "surname": "Chittaro",
+      "dateOfBirth": "1993-05-27",
+      "region": "Piemonte",
+      "rank": "Elementary",
+      "id": 1
+    },
+    {
+      "name": "qwerty",
+      "surname": "qwerty",
+      "email": "nonloso@gmail.com",
+      "password": "$2a$10$L2w9nOLpC4aHWdzZswIJReBU2yVCWZ3dTKfEHakAlSywS5.baBoAa",
+      "dateOfBirth": "1994-01-10",
+      "region": "Basilicata",
       "rank": "Advanced",
       "role": "user",
-      "id": 1
+      "id": 2
+    },
+    {
+      "email": "carmine@gmail.com",
+      "password": "$2a$10$NvuxRlir1YAvGNJVJkX6Je6.4eeZ42WhHlmScpp0aVWi4EY9MrMAO",
+      "name": "car",
+      "surname": "mine",
+      "dateOfBirth": "1990-01-10",
+      "region": "Sicilia",
+      "rank": "Elementary",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "name": "Edoardo",
+      "surname": "Trovarelli",
+      "email": "coserandom@gmail.com",
+      "password": "$2a$10$1Vd2M7wcHF62FrcM/sPhq.OWolEz.SWnwzu3KAe6AMJZnGHq3KfBy",
+      "dateOfBirth": "1960-01-20",
+      "region": "Friuli-Venezia Giulia",
+      "rank": "Advanced",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "name": "Giulia",
+      "surname": "Chittaro",
+      "email": "cose@gmail.com",
+      "password": "$2a$10$/Y4G6gsPDu07RHRB8FDUJuXUFJyHhJ1qWAnE7BCj4HwfORzRP25Ta",
+      "dateOfBirth": "1901-01-01",
+      "region": "Marche",
+      "rank": "Advanced",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "email": "random@gmail.com",
+      "password": "$2a$10$y3WTzm5FGLN4Levb8OJrreW7f/W88r1WfW4regsJLJpJA.22soSKG",
+      "name": "random",
+      "surname": "random",
+      "dateOfBirth": "1999-10-10",
+      "region": "Sicilia",
+      "rank": "Advanced",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "email": "canino@gmail.com",
+      "password": "$2a$10$EkC6Zq63MA6Jkll7TFiJ8.Rv1C.wNxJgHrxrMCzPM5oQPoNWT.eNm",
+      "name": "canino",
+      "surname": "canino",
+      "dateOfBirth": "1994-12-10",
+      "region": "Sicilia",
+      "rank": "Elementary",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "name": "Alessandro",
+      "surname": "Crescimanni",
+      "email": "alessandrocrescimanni@gmail.com",
+      "password": "$2a$10$LX1j3LeVfGEb9xekkfzSauegTX8h66.R3YDTpfUW19.KYMcuSwh7K",
+      "dateOfBirth": "1993-01-10",
+      "region": "Valle d'Aosta",
+      "rank": "Advanced",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "email": "alessandrocrescimanni1@gmail.com",
+      "password": "$2a$10$g9d2v75JvQS/cWZV/Ff3XulCu4RpDdRWyOgnBfIsPljev8pIOlVUK",
+      "name": "Alessandro",
+      "surname": "Crescimanni",
+      "dateOfBirth": "1994-01-10",
+      "region": "Sicilia",
+      "rank": "Advanced",
+      "role": "admin",
+      "id": 10
     }
   ]
 }

@@ -59,6 +59,27 @@
             <input id="goBack" type="button" value="Go Back" class="goBack grid-item7">
         </form>
     
+        <script type="module">
+            import { User, checkUserAccess } from "./assets/js/class.js"
+            let access = checkUserAccess()
+            let params = new URLSearchParams(location.search);
+            let userId = params.get('id');
+            console.log(userId)
+            let actualUser = localStorage.getItem('user')
+            let parsedUser = JSON.parse(actualUser)
+            let actualId = parsedUser.id
+            console.log(parsedUser.id)
+            if (!access) {
+    
+                location.href = 'index.html'
+    
+            }
+             if (userId !== parsedUser.id) { 
+    
+                location.href = 'index.html'
+    
+            }
+        </script>
         <script type="module" src="./assets/js/updateprofile.js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

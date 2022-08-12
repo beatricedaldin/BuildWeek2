@@ -26,15 +26,6 @@
       "sharedBy": "Reprehenderit volupt",
       "availability": "No",
       "id": 22
-    },
-    {
-      "title": "il giardino",
-      "author": "mario rossi",
-      "year": "2008",
-      "review": "",
-      "sharedBy": "marco",
-      "availability": "Yes",
-      "id": 23
     }
   ],
   "users": [
@@ -64,7 +55,7 @@
       "dateOfBirth": "1994-01-10",
       "region": "Abruzzo",
       "rank": "Elementary",
-      "role": "User",
+      "role": "admin",
       "id": 3
     },
     {
@@ -101,22 +92,22 @@
       "id": 6
     },
     {
+      "email": "random@gmail.com",
+      "password": "$2a$10$y3WTzm5FGLN4Levb8OJrreW7f/W88r1WfW4regsJLJpJA.22soSKG",
       "name": "random",
       "surname": "random",
-      "email": "random@gmail.com",
-      "password": "random",
-      "dateOfBirth": "1998-11-11",
+      "dateOfBirth": "1999-10-10",
       "region": "Sicilia",
-      "rank": "Elementary",
+      "rank": "Advanced",
       "role": "user",
       "id": 7
     },
     {
-      "name": "",
-      "surname": "",
-      "email": "cane@gmail.com",
-      "password": "cane",
-      "dateOfBirth": "",
+      "email": "canino@gmail.com",
+      "password": "$2a$10$EkC6Zq63MA6Jkll7TFiJ8.Rv1C.wNxJgHrxrMCzPM5oQPoNWT.eNm",
+      "name": "canino",
+      "surname": "canino",
+      "dateOfBirth": "1994-12-10",
       "region": "Sicilia",
       "rank": "Elementary",
       "role": "user",
@@ -154,28 +145,6 @@
       "rank": "Elementary",
       "role": "user",
       "id": 11
-    },
-    {
-      "name": "rocco",
-      "surname": "rossi",
-      "email": "rocco@gmail.com",
-      "password": "$2a$10$pEtwmspQx.suwpxD2/hNsehRR.n2e/sZjg9nl07TPyTGomGLs7ge.",
-      "dateOfBirth": "1970-03-03",
-      "region": "Veneto",
-      "rank": "Intermediate",
-      "role": "user",
-      "id": 12
-    },
-    {
-      "email": "buham@mailinator.com",
-      "password": "$2a$10$CWkhYLN0RqwUPYVEzfCY5OzBYSwlhFIk/WbGOWutk8et74HgZ8fwO",
-      "name": "Rhea Woodward",
-      "surname": "Herrera",
-      "dateOfBirth": "1970-05-19",
-      "region": "Molise",
-      "rank": "Elementary",
-      "role": "user",
-      "id": 13
     }
   ]
 }

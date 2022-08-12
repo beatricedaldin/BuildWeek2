@@ -1,24 +1,6 @@
 {
   "books": [
     {
-      "title": "Laborum Libero cons",
-      "author": "Dolorum in libero su",
-      "year": "1988",
-      "review": "Eveniet modi volupt",
-      "sharedBy": "Excepteur repudianda",
-      "availability": "No",
-      "id": 16
-    },
-    {
-      "title": "Cillum ut et enim ci",
-      "author": "Nulla alias reprehen",
-      "year": "1993",
-      "review": "Ducimus assumenda e",
-      "sharedBy": "Voluptatum commodi e",
-      "availability": "No",
-      "id": 18
-    },
-    {
       "title": "Sit esse dicta duis",
       "author": "Aute sed ducimus do",
       "year": "2000",
@@ -37,15 +19,6 @@
       "id": 20
     },
     {
-      "title": "Quisquam aut delectu",
-      "author": "Architecto excepteur",
-      "year": "1972",
-      "review": "Aliquam corporis ea ",
-      "sharedBy": "Aliqua Voluptas por",
-      "availability": "Yes",
-      "id": 21
-    },
-    {
       "title": "Deserunt deserunt ip",
       "author": "Omnis eos ullam offi",
       "year": "2015",
@@ -57,13 +30,11 @@
   ],
   "users": [
     {
-      "email": "alessandrocrescimanni@gmail.com",
-      "password": "$2a$10$4nqo6Ft5XTXnKZxpN3gZFuRvcGPYBeesbhAH54n./wJ8C1zqk8vc.",
-      "name": "Alessandro",
-      "surname": "Crescimanni",
-      "dateOfBirth": "1994-01-10",
-      "region": "Sicilia",
-      "rank": "Advanced",
+      "name": "Giulia",
+      "surname": "Chittaro",
+      "dateOfBirth": "1993-05-27",
+      "region": "Piemonte",
+      "rank": "Elementary",
       "id": 1
     },
     {
@@ -77,13 +48,14 @@
       "id": 2
     },
     {
-      "email": "waterstone78@gmail.com",
-      "password": "$2a$10$8gS.WxPHKECc57qJfP0MWuUeN8p2X0ZgW9lk/KtHSy7nSaBMGL3Ky",
-      "name": "qwerty",
-      "surname": "qwerty",
+      "email": "alessandrocrescimanni@gmail.com",
+      "password": "$2a$10$PCg3XOLwEF0dPCntQE1lOuNIx.fBlMyEJvq/FCZpmzn.WqXuf9n1K",
+      "name": "Alessandro",
+      "surname": "Crescimanni",
       "dateOfBirth": "1994-01-10",
-      "region": "Sicilia",
+      "region": "Abruzzo",
       "rank": "Elementary",
+      "role": "User",
       "id": 3
     },
     {
@@ -96,6 +68,26 @@
       "rank": "Elementary",
       "role": "user",
       "id": 4
+    },
+    {
+      "email": "coserandom@gmail.com",
+      "password": "$2a$10$eQHnA2ZIOPDWjRIUqkYhXOh4vzcL8/w6BRukbgScZiU19gXkiPY5W",
+      "name": "Edoardo",
+      "surname": "Trovarelli",
+      "dateOfBirth": "1960-01-20",
+      "region": "Campania",
+      "rank": "Intermediate",
+      "id": 5
+    },
+    {
+      "email": "cose@gmail.com",
+      "password": "$2a$10$/Y4G6gsPDu07RHRB8FDUJuXUFJyHhJ1qWAnE7BCj4HwfORzRP25Ta",
+      "name": "Giulia",
+      "surname": "Chittaro",
+      "dateOfBirth": "1901-01-01",
+      "region": "Abruzzo",
+      "rank": "Intermediate",
+      "id": 6
     }
   ]
 }

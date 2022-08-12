@@ -1,79 +1,77 @@
-html{
-    font-family: 'Luxurious Roman', cursive;
-   
+html {
+  font-family: 'Luxurious Roman', cursive;
+
 }
 
 input[placeholder] {
-    color: white;
-    font-family: 'Luxurious Roman', cursive;
-  }
+  color: white;
+  font-family: 'Luxurious Roman', cursive;
+}
 
 h1 {
-    color:black;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 7px;
-    text-transform: uppercase;
-    margin: 40px 50px;
-  }
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin: 40px 50px;
+}
 
   input[type='text'], [type='number'], #email, #password, #availability, #review, #grade, #region, #date {
  background: none;
   border: none;
- border-bottom: solid 2px black;
- color: black;
- font-size: 1.000em;
+  border-bottom: solid 2px black;
+  color: black;
+  font-size: 1.000em;
   font-weight: 400;
   letter-spacing: 1px;
- margin: 10px 50px 30px 50px;
- padding: 0 0 0.875em 0;
+  margin: 10px 50px 30px 50px;
+  padding: 0 0 0.875em 0;
   text-transform: uppercase;
- width: 80%;
- box-sizing: border-box;
- transition: all 0.3s;
+  width: 80%;
+  box-sizing: border-box;
+  transition: all 0.3s;
 }
 
-input[type='text']:focus, [type='number']:focus, #review:focus {
- outline: none;
- padding: 0 0 0.875em 0;
+input[type='text']:focus,
+[type='number']:focus,
+#review:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
 }
 
-#review{
- line-height: 150%;
- height: 150px;
- resize: none;
+#review {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
   width: 80%;
 }
 
-#myForm{
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: auto auto;
-}
+.submit,
+.goBack, .update {
 
-.submit , .goBack {
-
-    display:inline-block;
-    margin-left: 30%;
-    margin-bottom: 10px;
-    padding:0.7em 1.4em;
-    border:none;
-    text-decoration:none;
-    text-transform: uppercase;
-    font-weight:bold;
-    color:black;
-    background-color: whitesmoke;
-    background-size: cover;
-    background-repeat:no-repeat;
-    text-align:center;
-    cursor:pointer;
-    transition: all 1s ease;
-    width: 20%;
+  display: inline-block;
+  margin-left: 30%;
+  margin-bottom: 10px;
+  padding: 0.7em 1.4em;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  background-color: whitesmoke;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease;
+  width: 20%;
 
 }
 
-.submit:hover , .goBack:hover{
+.submit:hover,
+.goBack:hover {
 
-    border: 5px solid black;
-    color: white;
+  border: 5px solid black;
+  color: white;
 }

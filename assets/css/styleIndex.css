@@ -2,6 +2,8 @@ body {
     background-image: url('../img/libri-antichi1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 90vh;
+    max-width: 100%;
 }
 
 html {
@@ -60,15 +62,16 @@ span {
 }
 
 #addUser {
+    width: 100px;
     position: absolute;
     top: 0;
     left: -150px;
 }
 
-button {
+button , .aBtn {
     display: inline-block;
     padding: 0.7em 1.4em;
-    margin: 0 0.3em 0.3em 0;
+    margin: 5px auto;
     border: none;
     box-sizing: border-box;
     text-decoration: none;
@@ -83,9 +86,10 @@ button {
     position: relative;
     cursor: pointer;
     transition: all 1s ease;
+    width: 50%;
 }
 
-button:hover {
+button:hover, .aBtn:hover{
     border: 5px solid black;
     color: black;
 
@@ -122,20 +126,24 @@ h3 {
 #bookBox {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #library-container {
+   
     border: 2px solid rgb(220, 200, 200);
     width: 500px;
-    height: 600px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgb(238, 223, 223), rgb(240, 232, 232));
-    opacity: 0.6;
-    border-radius: 0px 100px 0px 50px;
+    background: rgb(170,158,122);
+    background: radial-gradient(circle, rgba(170,158,122,1) 0%, rgba(237,235,218,1) 100%);
+    opacity: 0.8;
+    border-radius: 50px 0px 0px 50px;
     margin-left: 50px;
-
+    overflow: auto;
+    scrollbar-width: 16px;
+    -webkit-scrollbar-track-background: #d9cba6;
 }
 
 #library {
@@ -145,13 +153,12 @@ h3 {
 #books {
     display: flex;
     flex-direction: column;
-
-
+    cursor: pointer;
 }
 
 #addBook {
-    width: 30%;
-    margin: 20px 15px;
+    width: 50%;
+    margin: 80px 80px;
 
 }
 
@@ -173,3 +180,52 @@ h3 {
 #bookBtns {
     margin-left: 250px;
 }
+
+#contact{
+   margin-top: -400px;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 45%;   
+}
+
+#forumBtn{
+    width: 150px;
+    height: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#container{
+  
+    border: 2px double none;
+    background: rgb(170,158,122);
+    background: radial-gradient(circle, rgba(170,158,122,1) 0%, rgba(237,235,218,1) 100%);
+    width: 350px;
+    height: 100px;
+    padding: 50px 60px 80px 60px;
+    font-family: 'Luxurious Roman', cursive ;
+    box-shadow:  10px  10px 5px rgb(170,158,122),
+     -10px -10px 10px rgb(170,158,122),
+     10px -10px 10px rgb(170,158,122),
+    -10px  10px 10px rgb(170,158,122);
+    display: none;
+    
+}
+
+.showForum {
+    display: block !important;
+}
+
+
+
+  #cose h2 , #aggiornamenti p {
+    margin: 10px 0;
+}
+
+#container h3 {
+    font-size: 1.5em
+    
+}
+
+

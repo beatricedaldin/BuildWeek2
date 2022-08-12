@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,84 +8,90 @@
     <link rel="stylesheet" href="./assets/css/updateProfile.css">
     <title>Update profile</title>
 </head>
+
 <body>
-    
 
 
-    
-       
-        <h1>Update your profile</h1>
-           
-            <input type="email" id="email" name="email" placeholder="Type your Email... ">
-            
-            <input type="password" id="password" name="password" placeholder="Type your password..."> <br>
-            <input type="text" id="name" class="grid-item1" name="name" placeholder="Type your First Name... "> 
-            
-            <input type="text" id="surname" class="grid-item2" name="surname" placeholder="Type your Last Name...">
-            
-            <input type="date" id="dateOfBirth" class="grid-item3" name="dateOfBirth" min="1900-01-01" max="2022-08-08">
-            
-                <select name="rank" id="rank" class="grid-item4">
-                    <option>Elementary</option>
-                    <option>Intermediate</option>
-                    <option>Advanced</option>
-                </select>
-            
-            <select name="region" id="region" class="grid-item5" >
-    
-                <option>Sicilia</option>
-                <option>Puglia</option>
-                <option>Campania</option>
-                <option>Basilicata</option>
-                <option>Calabria</option>
-                <option>Abruzzo</option>
-                <option>Molise</option>
-                <option>Marche</option>
-                <option>Lazio</option>
-                <option>Toscana</option>
-                <option>Emilia-Romagna</option>
-                <option>Sardegna</option>
-                <option>Veneto</option>
-                <option>Friuli-Venezia Giulia</option>
-                <option>Trentino-Alto Adige</option>
-                <option>Piemonte</option>
-                <option>Lombardia</option>
-                <option>Valle d'Aosta</option>
-                <option>Liguria</option>
-                <option>Umbria</option>
-                </select>
-             
 
-            <input id="update" type="update" value="Update" class="update grid-item7" >
-            <input id="goBack" type="button" value="Go Back" class="goBack grid-item7">
-        </form>
-    
-        <script type="module">
-            import { User, checkUserAccess } from "./assets/js/class.js"
-            let access = checkUserAccess()
-            let params = new URLSearchParams(location.search);
-            let userId = params.get('id');
-            console.log(userId)
-            let actualUser = localStorage.getItem('user')
-            let parsedUser = JSON.parse(actualUser)
-            let actualId = parsedUser.id
-            console.log(parsedUser.id)
-            if (!access) {
-    
-                location.href = 'index.html'
-    
-            }
-             if (userId !== parsedUser.id) { 
-    
-                location.href = 'index.html'
-    
-            }
-        </script>
-        <script type="module" src="./assets/js/updateprofile.js"></script>
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<h1>Update your profile</h1>
+    <form id="updateform">
+        
 
 
-   
+        
+        <input type="text" id="name"  name="name" placeholder="Type your First Name... ">
+
+        <input type="text" id="surname"  name="surname" placeholder="Type your Last Name...">
+        
+        <input type="email" id="email" name="email" placeholder="Type your Email... ">
+
+        <input type="password" id="password" name="password" placeholder="Type your password...">
+
+        <input type="date" id="dateOfBirth"  name="dateOfBirth" min="1900-01-01" max="2022-08-08">
+
+        <select name="rank" id="rank" >
+            <option>Elementary</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+
+        <select name="region" id="region" >
+
+            <option>Sicilia</option>
+            <option>Puglia</option>
+            <option>Campania</option>
+            <option>Basilicata</option>
+            <option>Calabria</option>
+            <option>Abruzzo</option>
+            <option>Molise</option>
+            <option>Marche</option>
+            <option>Lazio</option>
+            <option>Toscana</option>
+            <option>Emilia-Romagna</option>
+            <option>Sardegna</option>
+            <option>Veneto</option>
+            <option>Friuli-Venezia Giulia</option>
+            <option>Trentino-Alto Adige</option>
+            <option>Piemonte</option>
+            <option>Lombardia</option>
+            <option>Valle d'Aosta</option>
+            <option>Liguria</option>
+            <option>Umbria</option>
+        </select>
+
+        <div id="form-buttons">
+            <input id="update" type="submit" value="Update" >
+            <input id="goBack" type="button" value="Go Back" >
+        </div>
+    </form>
+
+    <script type="module">
+        import { User, checkUserAccess } from "./assets/js/class.js"
+        let access = checkUserAccess()
+        let params = new URLSearchParams(location.search);
+        let userId = params.get('id');
+        console.log(userId)
+        let actualUser = localStorage.getItem('user')
+        let parsedUser = JSON.parse(actualUser)
+        let actualId = parsedUser.id
+        console.log(actualId)
+        if (!access) {
+
+            location.href = 'index.html'
+
+        }
+        if (userId != actualId) {
+
+            location.href = 'index.html'
+
+        }
+    </script>
+    <script type="module" src="./assets/js/updateprofile.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
 
 </body>
+
 </html>

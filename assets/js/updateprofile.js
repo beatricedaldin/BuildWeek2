@@ -33,7 +33,7 @@ fetch(apiUrlU+'/'+userId)
     let dateOfBirth = document.querySelector('#dateOfBirth')
     let region = document.querySelector('#region')
     let rank = document.querySelector('#rank')
-    let id = document.querySelector('#id')
+    // let id = document.querySelector('#id')
 
     //let valueA = availability.options[availability.selectedIndex].text; 
 

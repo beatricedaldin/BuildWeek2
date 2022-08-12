@@ -57,14 +57,14 @@ span {
 
 
 #logUser {
-    width: 100px;
-   
+    width: 100px;  
     top: 0;
     margin-top: 20px;
     position: absolute;
-    left: 2300px;
+    right: 0;
     width: 120px;
     height: 70px;
+    
    
 }
 

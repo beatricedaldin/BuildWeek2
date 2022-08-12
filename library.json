@@ -1,13 +1,13 @@
 {
   "books": [
     {
-      "title": "sdhfksdhf",
-      "author": "sdfsdfgsfdg",
+      "title": "dfdfdf34343434343434",
+      "author": "df dfdf",
       "year": "1234",
-      "review": "sdfgsdfgsdfg",
-      "sharedBy": "fdegdfg",
+      "review": "ererererer",
+      "sharedBy": "fdegdfgfgh1234",
       "availability": "Yes",
-      "id": 1
+      "id": 2
     }
   ],
   "users": [
@@ -20,25 +20,15 @@
       "id": 1
     },
     {
-      "email": "nonloso@gmail.com",
-      "password": "$2a$10$HvdqXEDYgvMNy8pVTppjkeJ46LoFLQpwps0krqF/IzwyT.Jjokqcm",
       "name": "qwerty",
       "surname": "qwerty",
+      "email": "nonloso@gmail.com",
+      "password": "$2a$10$L2w9nOLpC4aHWdzZswIJReBU2yVCWZ3dTKfEHakAlSywS5.baBoAa",
       "dateOfBirth": "1994-01-10",
-      "region": "Sicilia",
-      "rank": "Elementary",
+      "region": "Basilicata",
+      "rank": "Advanced",
+      "role": "user",
       "id": 2
-    },
-    {
-      "email": "alessandrocrescimanni@gmail.com",
-      "password": "$2a$10$PCg3XOLwEF0dPCntQE1lOuNIx.fBlMyEJvq/FCZpmzn.WqXuf9n1K",
-      "name": "Alessandro",
-      "surname": "Crescimanni",
-      "dateOfBirth": "1994-01-10",
-      "region": "Abruzzo",
-      "rank": "Elementary",
-      "role": "admin",
-      "id": 3
     },
     {
       "email": "carmine@gmail.com",
@@ -94,6 +84,28 @@
       "rank": "Elementary",
       "role": "user",
       "id": 8
+    },
+    {
+      "name": "Alessandro",
+      "surname": "Crescimanni",
+      "email": "alessandrocrescimanni@gmail.com",
+      "password": "$2a$10$LX1j3LeVfGEb9xekkfzSauegTX8h66.R3YDTpfUW19.KYMcuSwh7K",
+      "dateOfBirth": "1993-01-10",
+      "region": "Valle d'Aosta",
+      "rank": "Advanced",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "email": "alessandrocrescimanni1@gmail.com",
+      "password": "$2a$10$g9d2v75JvQS/cWZV/Ff3XulCu4RpDdRWyOgnBfIsPljev8pIOlVUK",
+      "name": "Alessandro",
+      "surname": "Crescimanni",
+      "dateOfBirth": "1994-01-10",
+      "region": "Sicilia",
+      "rank": "Advanced",
+      "role": "admin",
+      "id": 10
     }
   ]
 }

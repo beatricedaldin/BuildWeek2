@@ -1,23 +1,22 @@
 
-import { apiUrlB, Book } from './class.js';
     
     let params = new URLSearchParams(location.search);
     let bookId = params.get('id');
 
-class Book{
-    constructor(title, author, year, review, sharedBy,availability, id){
-        this.title = title
-        this.author = author
-        this.year = year
-        this.review = review
-        this.sharedBy = sharedBy
-        this.availability = availability
-        this.id = id
-
+    class Book{
+        constructor(title, author, year, review, sharedBy,availability, id){
+            this.title = title
+            this.author = author
+            this.year = year
+            this.review = review
+            this.sharedBy = sharedBy
+            this.availability = availability
+            this.id = id
+    
+        }
     }
-}
-
-const apiUrlB = "http://localhost:3000/books"
+    
+    const apiUrlB = "http://localhost:3000/books"
 
 
 
@@ -46,7 +45,7 @@ fetch(apiUrlB+'/'+bookId)
     
 })
 
-let upBtn = document.querySelector('#update');
+let upBtn = document.querySelector('.update');
 
 upBtn.addEventListener('click',function(e){
     e.preventDefault();
@@ -56,8 +55,8 @@ upBtn.addEventListener('click',function(e){
     let year = document.querySelector('#year').value
     let review = document.querySelector('#review').value
     let sharedBy = document.querySelector('#sharedBy').value
-    let availability = document.querySelector('#availability')
-    //var valueA = availability.options[availability.selectedIndex].text;
+    let availability = document.querySelector('#availability').value
+    // var valueA = availability.options[availability.selectedIndex].text;
 
     let book = new Book(title, author, year, review, sharedBy, availability)
 

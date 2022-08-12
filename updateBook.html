@@ -32,14 +32,16 @@
     </form>
 
     <script type="module">
-        import { checkUserAccess, checkUserRole } from "./assets/js/class.js"
+        import { checkUserAccess, checkUserRole, getUserRole, isUserAdmin } from "./assets/js/class.js"
         let access = checkUserAccess()
-        let checkRole = checkUserRole(role)
+        let checkRole = isUserAdmin()
+        console.log(checkRole)
         if (!access) {
 
             location.href = 'index.html'
 
-        } else if (checkRole != 'admin'){ 
+        }
+        if (!isUserAdmin){ 
 
             let removeForm = document.querySelector('#myForm')
             removeForm.remove()

@@ -50,5 +50,4 @@ submitUser.addEventListener('click', function(e){
 
     })
 
-location.href = "login.html";
 })
